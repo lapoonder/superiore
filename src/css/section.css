@@ -1,0 +1,18 @@
+/* Styles for Mobile devices */
+.section {
+  min-width: 320px;
+  padding-top: 64px;
+  padding-bottom: 0;
+}
+/* Styles for Tablet devices */
+@media (min-width: 768px) {
+  .section {
+    padding-top: 96px;
+  }
+}
+/* Styles for Desktop devices */
+@media (min-width: 1440px) {
+  .section {
+    padding-top: 164px;
+  }
+}
