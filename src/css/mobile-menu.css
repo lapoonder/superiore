@@ -1,0 +1,80 @@
+.modal-overlay-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms linear, visibility 250ms linear;
+    background-color: rgba(12, 12, 12, 0.99);
+}
+
+.modal-overlay-menu.is-open{
+    opacity: 1;
+    pointer-events: auto;
+} 
+
+.mobile-menu {
+    position: absolute;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url('../img/hero/hero-1x-mob.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.mobmenu-btn-close {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 32px;
+    left: 315px;
+}
+
+.mobmenu-nav {
+    padding: 302px 136px 289px;
+}
+
+.mobnemu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.mobmenu-list-item {}
+
+.mobmenu-list-link {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    color: #fafafa;
+}
+
+.mobmebu-container-btn-project {
+padding: 0px 90px 64px;
+}
+
+.mobmenu-btn-project {
+    background-color: #ed3b44;
+    border-radius: 60px;
+    padding: 14px 31px;
+    max-width: 164px;
+    height: 45px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    border: none;
+}

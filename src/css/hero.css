@@ -1,0 +1,57 @@
+/*Мобільна версія*/
+
+/*фонове зображення*/
+.hero-img {
+    background-image: 
+    url(../img/hero/hero-1x-mob.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (min-resolution:192dpi) {
+    .hero-img {
+        background-image: url(../img/hero/hero-2x-mob.png);
+    }
+}
+
+/*контент секції*/
+.hero {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.hero-title {
+    padding: 281px 0 212px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+}
+
+.hero-list {
+    max-width: 100%;
+    display: flex;
+    gap: 4px;
+    justify-content: flex-start;
+    padding-bottom: 32px;
+}
+
+.hero-list-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 12px;
+    height: 37px; 
+}
+
+.hero-list-link {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+
+/*Планшетка версія*/
