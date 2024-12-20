@@ -9,8 +9,11 @@ body {
     align-items: center;
 }
 
-.container {
-    margin-top: 64px;
+
+.fag-ul {
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
 }
 
 .fag-h1 {
@@ -21,12 +24,6 @@ body {
     color: rgba(250, 250, 250, 0.4);
     width: 284px;
     margin-bottom: 32px;
-}
-
-.fag-ul {
-    padding: 0;
-    list-style: none;
-    margin: 0 auto;
 }
 
 .fag-li {
