@@ -18,11 +18,67 @@
     <script type="module" crossorigin src="/superiore/index.js"></script>
     <link rel="modulepreload" crossorigin href="/superiore/assets/vendor-I1I71QQ2.js">
     <link rel="stylesheet" crossorigin href="/superiore/assets/vendor-DnveWo0P.css">
-    <link rel="stylesheet" crossorigin href="/superiore/assets/index-CBZcDVYu.css">
+    <link rel="stylesheet" crossorigin href="/superiore/assets/index-w-OrJ1fG.css">
   </head>
   <body data-mobile-menu-body-block>
+    <header class="header">
+  <div class="container header-container">
+    <a class="header-logo" href="#">
+      <img
+        srcset="../img/logo-1x.png 1x, ../img/logo-2x.png 2x"
+        src="../img/logo-1x.png"
+        alt="logo"
+      />
+      <svg class="header-svg-logo" width="84" height="19">
+        <use href="/superiore/assets/header-ceJeh-SM.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="header-nav">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+    <button class="btn-mob-menu">
+      <svg class="header-svg-btn" width="21" height="16">
+        <use href="/superiore/assets/header-ceJeh-SM.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
     <main>
-      
+      <section class="hero hero-img">
+  <div class="container">
+    <h1 class="hero-title">Hello. I’m Fullstack developer Lloyd Jefferson.</h1>
+    <ul class="hero-list">
+      <li class="hero-list-item">
+        <a class="hero-list-link" href="https://www.instagram.com/goitclub/"
+          >IG</a
+        >
+      </li>
+      <li class="hero-list-item">
+        <a class="hero-list-link" href="https://www.facebook.com/goITclub/"
+          >FB</a
+        >
+      </li>
+      <li class="hero-list-item">
+        <a class="hero-list-link" href="https://www.youtube.com/c/GoIT">YT</a>
+      </li>
+      <li class="hero-list-item">
+        <a class="hero-list-link" href="https://github.com/lapoonder/superiore"
+          >GH</a
+        >
+      </li>
+      <li class="hero-list-item">
+        <a class="hero-list-link" href="">test@gmail.com</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
       
       <section class="section benefits">
   <div class="container">
@@ -81,13 +137,82 @@
   </div>
 </section>
 
-      
+      <div class="container">
+  <section class="projects-section">
+    <h2 class="h2-project">Projects</h2>
+    <div class="div-list-p">
+      <ul class="tags-panel">
+        <li class="tag">#react</li>
+        <li class="tag">#js</li>
+        <li class="tag">#node js</li>
+        <li class="tag">#git</li>
+      </ul>
+      <p class="p-project">
+        Programming Across Borders: Ideas, Technologies, Innovations
+      </p>
+      <a
+        class="bth-project"
+        target="_blank"
+        href="https://github.com/lapoonder/superiore"
+        role="button"
+        >See project</a
+      >
+    </div>
+
+    <div class="swiper-container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <img
+            loading="lazy"
+            srcset="/superiore/assets/img-1-1x-D-LJglZh.png 1x, /superiore/assets/img-1-2x-YUg1KLB0.png 2x"
+            src="/superiore/assets/img-1-1x-D-LJglZh.png"
+            alt="project-one"
+            class="img-project"
+          />
+        </li>
+        <li class="swiper-slide">
+          <img
+            loading="lazy"
+            srcset="/superiore/assets/img-2-1x-BPWvmIju.png 1x, /superiore/assets/img-2-2x-DhD7Q-aB.png 2x"
+            src="/superiore/assets/img-2-1x-BPWvmIju.png"
+            alt="project-two"
+            class="img-project"
+          />
+        </li>
+        <li class="swiper-slide">
+          <img
+            loading="lazy"
+            srcset="/superiore/assets/img-3-1x-DTNJsQy7.png 1x, /superiore/assets/img-3-2x-DALgkvAu.png 2x"
+            src="/superiore/assets/img-3-1x-DTNJsQy7.png"
+            alt="project-three"
+            class="img-project"
+          />
+        </li>
+      </ul>
+    </div>
+
+    <nav class="nav-bth">
+      <button class="swiper-button-prev">
+        <svg width="25" height="24" class="svg-one">
+          <use href="/superiore/assets/sprite-C-4FcVsL.svg#icon-arrow-narrow-left"></use>
+        </svg>
+      </button>
+      <button class="swiper-button-next">
+        <svg width="25" height="24" class="svg-two">
+          <use href="/superiore/assets/sprite-C-4FcVsL.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </button>
+    </nav>
+    <!-- <script type="module" src="../js/swiper.js"></script> -->
+  </section>
+</div>
+
       
       
       
     </main>
-
-    <footer class="container footer">
+    
+  <footer class="container footer">
   <div class="section footer-section">
     <h2 class="footer-header">
       <img
@@ -133,7 +258,32 @@
 </footer>
 
 
-    
+  <div class="modal-overlay-menu">
+  <div class="mobile-menu container">
+    <button class="mobmenu-btn-close">X</button>
+    <nav class="mobmenu-nav">
+      <ul class="mobnemu-list">
+        <li class="mobmenu-list-item">
+          <a class="mobmenu-list-link" href="">About me</a>
+        </li>
+        <li class="mobmenu-list-item">
+          <a class="mobmenu-list-link" href="">Benefits</a>
+        </li>
+        <li class="mobmenu-list-item">
+          <a class="mobmenu-list-link" href="">Projects</a>
+        </li>
+        <li class="mobmenu-list-item">
+          <a class="mobmenu-list-link" href="">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobmebu-container-btn-project">
+      <button class="mobmenu-btn-project">Order the project</button>
+    </div>
+  </div>
+</div>
 
-  </body>
+
+</body>
+
 </html>
