@@ -1,0 +1,242 @@
+.about-me {
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.about-me>.container {
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
+
+.about-me-discr {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.discr-card {
+    border-radius: 24px;
+    width: 343px;
+    height: 500px;
+    background: #3B3B3B;
+
+    /*
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 54px;
+     */
+}
+
+.discr-text {
+    font-family: "Inter Tight",
+        sans-serif;;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #FAFAFA;
+    width: 279px;
+    height: auto;
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.discr-text>.accent-first {
+    color: #ED3B44;
+}
+
+.discr-text>.accent-second {
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.discr-img {
+    max-width: 343px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 24px;
+}
+
+.accordion {
+    margin-top: 12px;
+    width: 343px;
+    height: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.accordion-item {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+}
+
+.accordion-title {
+    font-family: "Inter Tight",
+        sans-serif;;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+}
+.accordion-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.svg-right-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 100px;
+    padding: 9px;
+    width: 36px;
+    height: 36px;
+    margin-left: 23px;
+    background-color: transparent;
+}
+.icon-sec {
+    display: none;
+}
+.icon-up {
+    display: block;
+}
+.accordion-header[aria-expanded="true"] .icon-up {
+    display: block;
+}
+.accordion-header[aria-expanded="true"] .icon-down {
+    display: none;
+}
+.accordion-header[aria-expanded="false"] .icon-up {
+    display: none;
+}
+.accordion-header[aria-expanded="false"] .icon-down {
+    display: block;
+}
+
+.accordion-content {
+    font-family: "Inter Tight",
+        sans-serif;;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #FAFAFA;
+    display: none;
+    padding-top: 12px;
+    padding-bottom: 20px;
+
+}
+
+.accordion-item.open .accordion-content {
+    display: block;
+}
+
+.accordion-about-text{
+    margin-top: 32px;
+}
+
+.accordion-role-list{
+display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.skills-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+.skills-list-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    background-color: transparent;
+}
+
+.skills-list-items.chosen {
+    background-color: #ED3B44;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .about-me {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .about-me>.container {
+        padding: 0 32px;
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+    .about-me {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .about-me>.container {
+        padding: 0 65px;
+    }
+
+
+}

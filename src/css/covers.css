@@ -1,0 +1,59 @@
+
+#covers{
+    margin-top: 15px;
+}
+
+#covers .container{
+    background-color: rgba(217, 217, 217, 0.04);
+    background-image: url(../img/covers-background.svg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    height: 546px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 28px;
+    width: 100%;
+    max-width: 100vw;
+}
+
+.projects-list{
+    position: relative;
+    top: calc(-162px * 2);
+    left: calc(-282px * 2);
+    display: flex;
+    gap:  23px;
+    transform: rotate(16deg)
+}
+
+.projects-list:nth-child(2n) {
+    padding-left: calc(282px / 2);
+}
+
+.projects-list  li{
+    min-width: 282px;
+
+}
+
+.projects-list img{
+    width: 282px;
+    height: 162px;
+}
+
+@media (min-width: 768px) {
+    #covers .container{
+        height: 960px;
+        gap: 56px;
+    }
+    .projects-list {
+        gap: 46px;
+    }
+    .projects-list li {
+            min-width: 544px;
+    }
+    .projects-list img {
+            width: 544px;
+            height: 314px;
+    }
+}
