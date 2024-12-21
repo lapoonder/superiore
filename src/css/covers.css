@@ -29,7 +29,7 @@
 }
 
 .projects-list:nth-child(2n) {
-    padding-left: calc(282px / 2);
+    padding-left: 282px;
 }
 
 .projects-list  li{
