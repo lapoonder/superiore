@@ -28,3 +28,12 @@
   background-color: inherit;
   color: #fafafa;
 }
+
+.svg-one {
+  fill: transparent;
+  stroke: white;
+}
+.svg-two {
+  fill: transparent;
+  stroke: white;
+}
