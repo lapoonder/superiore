@@ -6,13 +6,13 @@ import iziToast from 'izitoast';
 
 const cards = document.querySelector('.cards');
 
-try {
-  const result = await getReviews();
-  cards.insertAdjacentHTML('beforeend', createMarkup(result));
-} catch {
-  iziToast.message;
-  cards.innerHTML = '<h2>Not found</h2>';
-}
+// try {
+//   const result = await getReviews();
+//   cards.insertAdjacentHTML('beforeend', createMarkup(result));
+// } catch {
+//   iziToast.message;
+//   cards.innerHTML = '<h2>Not found</h2>';
+// }
 
 function createMarkup(arr) {
   return arr
