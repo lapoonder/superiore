@@ -11,7 +11,20 @@
                 </p>
             </div>
             <div class="discr-card">
-                <img class="discr-img">
+                <picture>
+                    <source srcset="/superiore/assets/img/about_me_desk.png    1x,
+                                    /superiore/assets/img/about_me_desk@2x.png 2x
+                                                      " media="(min-width: 1158px)" />
+                    <source srcset="
+                                    /superiore/assets/img/about_me_tab.png    1x,
+                                    /superiore/assets/img/about_me_tab@2x.png 2x
+                                                      " media="(min-width: 768px)" />
+                    <source srcset="
+                                    /superiore/assets/img/about_me_mob.png 1x, 
+                                    /superiore/assets/img/about_me_mob@2.png 2x
+                                                      " media="(max-width: 767px)" />
+                    <img loading="lazy" src="../img/about_me_mob.jpg" alt="men" class="discr-img" />
+                </picture>
             </div>
 
         </div>
@@ -21,11 +34,11 @@
                     <div class="accordion-header">
                         <button class="accordion-toggle" aria-expanded="true">
                             <span class="accordion-title">About Me</span>
-                            <div class="svg-right-div">
-                                <svg class="icon-sec icon-up" width="20" height="20">
+                            <div class="about-svg-icon">
+                                <svg class="about-icon about-icon-up" width="20" height="20">
                                     <use href="/img/sprite.svg#icon-arrow-up"></use>
                                 </svg>
-                                <svg class="icon-sec icon-down" width="20" height="20">
+                                <svg class="about-icon about-icon-down" width="20" height="20">
                                     <use href="/img/sprite.svg#icon-arrow-down"></use>
                                 </svg>
                             </div>
@@ -39,28 +52,23 @@
                             and look for unconventional, creative solutions to problems. I have a high level of
                             analytical skills and am able to
                             effectively solve even the most difficult tasks encountered on the way.</p>
-                        <p class="accordion-about-text">Able to work both independently and in a team. I can effectively cooperate with colleagues,
-                            exchanging ideas and finding
-                            optimal solutions. Professional maturity allows you to calmly cope with challenges and
-                            stressful situations, while
-                            maintaining a high quality of work.</p>
-                        <p> I am always looking for opportunities for
-                            self-improvement. I actively study new
-                            technologies and practices to stay abreast of the latest innovations. I have a strong
-                            understanding of various
-                            programming languages, frameworks and architectural concepts that allow me to create
-                            efficient and scalable software.</p>
+                        <p class="accordion-about-text">Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas and finding
+                        optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful situations, while
+                        maintaining a high quality of work. I am always looking for opportunities for self-improvement. I actively study new
+                        technologies and practices to stay abreast of the latest innovations. I have a strong understanding of various
+                        programming languages, frameworks and architectural concepts that allow me to create efficient and scalable software.</p>
                     </div>
                 </li>
                 <li class="accordion-item open">
                     <div class="accordion-header">
                         <button class="accordion-toggle" aria-expanded="true">
                             <span class="accordion-title"> Role </span>
-                            <div class="svg-right-div">
-                                <svg class="icon-sec icon-up" width="20" height="20">
-                                    <use href="/img/sprite.svg#icon-arrow-up"></use>
+                            <div class="about-svg-icon">
+                                <svg class="about-icon about-icon-up" width="20" height="20">
+
+                                    <use href="../img/sprite.svg#icon-arrow-up"></use>
                                 </svg>
-                                <svg class="icon-sec icon-down" width="20" height="20">
+                                <svg class="about-icon about-icon-down" width="20" height="20">
                                     <use href="/img/sprite.svg#icon-arrow-down"></use>
                                 </svg>
                             </div>
@@ -79,15 +87,16 @@
                     <div class="accordion-header">
                         <button class="accordion-toggle" aria-expanded="true">
                             <span class="accordion-title">Education</span>
-                            <div class="svg-right-div">
-                                <svg class="icon-sec icon-up" width="20" height="20">
+                            <div class="about-svg-icon">
+                                <svg class="about-icon about-icon-up" width="20" height="20">
                                     <use href="/img/sprite.svg#icon-arrow-up"></use>
                                 </svg>
-                                <svg class="icon-sec icon-down" width="20" height="20">
+                                <svg class="about-icon about-icon-down" width="20" height="20">
                                     <use href="/img/sprite.svg#icon-arrow-down"></use>
                                 </svg>
                             </div>
                         </button>
+
                     </div>
                     <div class="accordion-content">
                         <ul class="accordion-role-list">
@@ -99,7 +108,7 @@
                 </li>
             </ul>
         </div>
-        <div>
+        <div class="accordion-toggle">
             <ul class="skills-list">
                 <li class="skills-list-items chosen">HTML/CSS</li>
                 <li class="skills-list-items">JavaScript</li>
@@ -108,12 +117,13 @@
                 <li class="skills-list-items">React Native</li>
                 <li class="skills-list-items">Soft skills</li>
             </ul>
-            <!--
-                <button class="accordion-toggle" >
-                    <img src="path-to-side-icon.svg" alt="Expand" class="icon icon-right" />
-                </button> 
-                -->
-
+                <button class="accordion-toggle">
+                    <div class="about-svg-side-icon">
+                        <svg class="about-side-icon icon-right" width="40" height="40">
+                            <use href="/img/sprite.svg#icon-arrow-narrow-right"></use>
+                        </svg>
+                    </div>
+                </button>
         </div>
 
     </div>
