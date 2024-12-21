@@ -96,9 +96,9 @@
   .header-navigation {
     position: absolute;
     top: 40px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
-    /* display: none; */
+    align-items: center; */
+    display: none;
   }
 }

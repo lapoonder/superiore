@@ -5,11 +5,12 @@
     /* background-image: 
     url(../img/hero/hero-1x-mob.png); */
     position: relative;
-    background-image: linear-gradient(-90deg,
+    background-image: 
+    url(/img/hero.svg),
+    linear-gradient(-90deg,
         #000 50%,
         #69292d 68%,
-        #ed3b44 100%),
-    url(/img/hero.svg);
+        #ed3b44 100%);
     backdrop-filter: blur(4px);
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,3 +60,8 @@
 }
 
 /*Планшетна версія*/
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 90px;
+    }
+}
