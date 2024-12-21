@@ -2,13 +2,17 @@
 
 import { message, messageInfo } from './js/iziToast.js';
 import getReviews from './js/goit-reviewsAPI.js';
+import iziToast from 'izitoast';
 
 const cards = document.querySelector('.cards');
 
 try {
   const result = await getReviews();
   cards.insertAdjacentHTML('beforeend', createMarkup(result));
-} catch {}
+} catch {
+  iziToast.message;
+  cards.innerHTML = '<h2>Not found</h2>';
+}
 
 function createMarkup(arr) {
   return arr
