@@ -1,0 +1,145 @@
+.about-me {
+
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.about-me>.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
+
+.about-me-discr {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.discr-card {
+    border-radius: 24px;
+    width: 343px;
+    height: 500px;
+    background: var(--cards);
+
+    /*
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 54px;
+     */
+}
+
+.discr-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--main-text);
+    width: 279px;
+    height: auto;
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.discr-text>.accent-first {
+    color: var(--button-text);
+}
+
+.discr-text>.accent-second {
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.discr-img {
+    max-width: 343px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 24px;
+}
+
+.accordion {
+    margin-top: 32px;
+    width: 343px;
+    height: auto;
+
+}
+
+.accordion-item {}
+
+.accordion-item>.open {}
+
+.accordion-header {}
+
+.accordion-header-text {
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.accordion-toggle {}
+
+.accordion-content {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: var(--main-text);
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .about-me {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .about-me>.container {
+        padding: 0 32px;
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+    .about-me {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .about-me>.container {
+        padding: 0 65px;
+    }
+
+
+}
