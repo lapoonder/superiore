@@ -96,9 +96,18 @@
   .header-navigation {
     position: absolute;
     top: 40px;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center; */
-    display: none;
+    align-items: center;
+    /* display: none; */
+  }
+
+  .header-navigation-link {
+    transition: color 250ms linear, text-decoration 250ms linear;
+  }
+  .header-navigation-link:hover,
+  .header-navigation-link:focus {
+    text-decoration: underline;
+    color: #ed3b44;
   }
 }
