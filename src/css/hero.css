@@ -2,13 +2,12 @@
 
 /*фонове зображення*/
 .hero-img {
-    background-image: 
-    url(../img/webp/hero-mob1x.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../img/webp/hero-mob1x.webp);
+    background-size: contain;
+    background-repeat: repeat;
     background-position: center;
 }
-@media screen and (min-resolution:192dpi) {
+@media screen and (min-resolution: 192dpi) {
     .hero-img {
         background-image: url(../img/webp/hero-mob2x.webp);
     }
@@ -44,7 +43,7 @@
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
     padding: 10px 12px;
-    height: 37px; 
+    height: 37px;
     transition: border 250ms linear;
 }
 
@@ -63,14 +62,15 @@
 /*Планшетна версія*/
 @media screen and (min-width: 768px) {
     .hero-img {
-        background-image:
-                url(../img/webp/hero-tab1x.webp);
+        background-image: url(../img/webp/hero-tab1x.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-@media screen and (min-resolution:192dpi) {
-    .hero-img {
-        background-image: url(../img/webp/hero-tab2x.webp);
-            }
+    @media screen and (min-resolution: 192dpi) {
+        .hero-img {
+            background-image: url(../img/webp/hero-tab2x.webp);
         }
+    }
 
     .hero-title {
         font-size: 90px;
@@ -87,7 +87,7 @@
         height: 55px;
     }
 
-    .hero-list-link{
+    .hero-list-link {
         font-size: 16px;
     }
 }
@@ -95,15 +95,14 @@
 /*Десктопна версія*/
 @media (min-width: 1440px) {
     .hero-img {
-        background-image:
-            url(../img/webp/hero-desk1x.webp);
-        }
-    
-    @media screen and (min-resolution:192dpi) {
+        background-image: url(../img/webp/hero-desk1x.webp);
+    }
+
+    @media screen and (min-resolution: 192dpi) {
         .hero-img {
             background-image: url(../img/webp/hero-desk2x.webp);
-            }
         }
+    }
 
     .hero-title {
         font-size: 90px;
