@@ -7,7 +7,7 @@ import iziToast from 'izitoast';
 const cards = document.querySelector('.cards');
 
 try {
-    const result = await getReviews();
+    let result = await getReviews();
     cards.insertAdjacentHTML('beforeend', createMarkup(result));
 } catch {
     iziToast.message;
