@@ -3,23 +3,14 @@
 /*фонове зображення*/
 .hero-img {
     background-image: 
-    url(../img/hero/glass_effect_mob.png),
-    linear-gradient(-90deg,
-        #000 50%,
-        #69292d 68%,
-        #ed3b44 100%);
-    backdrop-filter: blur(4px);
+    url(../img/webp/hero-mob1x.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 @media screen and (min-resolution:192dpi) {
     .hero-img {
-        background-image: url(../img/hero/glass_effect_mob@2x.png),
-        linear-gradient(-90deg,
-                #000 50%,
-                #69292d 68%,
-                #ed3b44 100%);
+        background-image: url(../img/webp/hero-mob2x.webp);
     }
 }
 
@@ -73,19 +64,11 @@
 @media screen and (min-width: 768px) {
     .hero-img {
         background-image:
-                url(../img/hero/glass_effect_tab.png),
-                linear-gradient(-90deg,
-                    #000 50%,
-                    #69292d 68%,
-                    #ed3b44 100%);
+                url(../img/webp/hero-tab1x.webp);
     }
 @media screen and (min-resolution:192dpi) {
     .hero-img {
-        background-image: url(../img/hero/glass_effect_tab@2x.png),
-                linear-gradient(-90deg,
-                    #000 50%,
-                    #69292d 68%,
-                    #ed3b44 100%);
+        background-image: url(../img/webp/hero-tab2x.webp);
             }
         }
 
@@ -113,20 +96,12 @@
 @media (min-width: 1440px) {
     .hero-img {
         background-image:
-            url(../img/hero/glass_effect.png),
-            linear-gradient(-90deg,
-                #000 50%,
-                #69292d 68%,
-                #ed3b44 100%);
+            url(../img/webp/hero-desk1x.webp);
         }
     
     @media screen and (min-resolution:192dpi) {
         .hero-img {
-            background-image: url(../img/hero/glass_effect@2x.png),
-                linear-gradient(-90deg,
-                    #000 50%,
-                    #69292d 68%,
-                    #ed3b44 100%);
+            background-image: url(../img/webp/hero-desk2x.webp);
             }
         }
 
