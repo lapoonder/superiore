@@ -9,6 +9,7 @@ btnClose.addEventListener("click", mobileMenuClose);
 
 function mobileMenuOpen() {
     modalWindow.classList.add("is-open");
+    btnOrderProject.removeAttribute("disabled");
 }
 
 function mobileMenuClose() {
@@ -23,7 +24,10 @@ const sectionFooter = document.querySelector("#work_together");
 btnOrderProject.addEventListener("click", orderProject);
 mobMenuNavigation.addEventListener("click", mobMenuClick);
 
-function orderProject() {
+function orderProject(event) {
+    const btnTarget = event.target;
+    btnTarget.setAttribute("disabled", "");
+    // btnOrderProject.setAttribute("disabled", "")
     modalWindow.classList.remove("is-open");
     sectionFooter.scrollIntoView({
     behavior: 'smooth', 
@@ -39,3 +43,29 @@ function mobMenuClick(event) {
     
 }
 
+/*навігація для планшетної та десктопної версії*/
+const btnHeaderNavigtion = document.querySelector(".header-btn-navigation")
+const menuNavigationTab = document.querySelector(".header-navigation");
+
+btnHeaderNavigtion.addEventListener("click", openNavMenu);
+menuNavigationTab.addEventListener("click", scrollMenu)
+
+function openNavMenu() {
+    if (menuNavigationTab.style.display === "flex") {
+        menuNavigationTab.style.display = "none";
+    } else {
+        menuNavigationTab.style.display = "flex";
+        menuNavigationTab.style.flexDirection = "column";
+        menuNavigationTab.style.alignItems = "center";
+    }
+};
+
+function scrollMenu(event) {
+    const clickElement = event.target;
+    if (clickElement.classList.contains("header-navigation-link")) {
+         menuNavigationTab.style.display = "none";
+    }
+};
+
+const btnOrderProjectHeader = document.querySelector(".header-btn-order");
+btnOrderProjectHeader.addEventListener("click", orderProject);
