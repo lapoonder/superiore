@@ -1,0 +1,108 @@
+/*модальне вікно*/
+.modal-overlay-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(12, 12, 12, 0.99);
+    transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.modal-overlay-menu.is-open{
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+} 
+
+.mobile-menu {
+    position: absolute;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 64px;
+    padding-top: 30vh;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/hero/hero-1x-mob.png');
+    background-position: center;
+    background-size: cover;
+}
+@media screen and (min-resolution:192dpi) {
+    .mobile-menu {
+        background-image: url(../img/hero/hero-2x-mob.png);
+    }
+}
+
+/*кнопка закрити*/
+.mobmenu-btn-close {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 32px;
+    right: 16px;
+    background-color: transparent;
+    border: none;
+}
+
+.mobmenu-svg-close {
+    fill: #fafafa;
+    transition: fill 250ms linear;
+}
+
+.mobmenu-svg-close:hover,
+.mobmenu-svg-close:focus {
+    fill: #ed3b44;
+}
+
+/*навігація*/
+.mobnemu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.mobmenu-list-link {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    color: #fafafa;
+    transition: color 250ms linear;
+}
+
+.mobmenu-list-link:hover,
+.mobmenu-list-link:focus {
+    color: #ed3b44;
+}
+
+/*кнопка скролу до проектів*/
+.mobmenu-btn-project {
+    background-color: #ed3b44;
+    border-radius: 60px;
+    padding: 14px 31px;
+    max-width: 164px;
+    height: 45px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    border: none;
+    transition: background-color 250ms linear;
+}
+
+.mobmenu-btn-project:hover,
+.mobmenu-btn-project:focus {
+    background-color: #e0373f;
+}

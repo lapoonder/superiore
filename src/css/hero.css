@@ -1,0 +1,137 @@
+/*Мобільна версія*/
+
+/*фонове зображення*/
+.hero-img {
+    background-image: 
+    url(../img/hero/glass_effect_mob.png),
+    linear-gradient(-90deg,
+        #000 50%,
+        #69292d 68%,
+        #ed3b44 100%);
+    backdrop-filter: blur(4px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (min-resolution:192dpi) {
+    .hero-img {
+        background-image: url(../img/hero/glass_effect_mob@2x.png),
+        linear-gradient(-90deg,
+                #000 50%,
+                #69292d 68%,
+                #ed3b44 100%);
+    }
+}
+
+/*контент секції*/
+.hero {
+    position: relative;
+}
+
+.hero-title {
+    padding-top: 281px;
+    padding-bottom: 212px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+}
+
+.hero-list {
+    max-width: 100%;
+    display: flex;
+    gap: 4px;
+    justify-content: flex-start;
+    padding-bottom: 32px;
+}
+
+.hero-list-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 12px;
+    height: 37px; 
+    transition: border 250ms linear;
+}
+
+.hero-list-item:hover,
+.hero-list-item:focus {
+    border: 1px solid #fafafa;
+}
+
+.hero-list-link {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+
+/*Планшетна версія*/
+@media screen and (min-width: 768px) {
+    .hero-img {
+        background-image:
+                url(../img/hero/glass_effect_tab.png),
+                linear-gradient(-90deg,
+                    #000 50%,
+                    #69292d 68%,
+                    #ed3b44 100%);
+    }
+@media screen and (min-resolution:192dpi) {
+    .hero-img {
+        background-image: url(../img/hero/glass_effect_tab@2x.png),
+                linear-gradient(-90deg,
+                    #000 50%,
+                    #69292d 68%,
+                    #ed3b44 100%);
+            }
+        }
+
+    .hero-title {
+        font-size: 90px;
+        padding: 300px 72px 187px 0;
+    }
+
+    .hero-list {
+        gap: 8px;
+        justify-content: flex-end;
+    }
+
+    .hero-list-item {
+        padding: 18px 20px;
+        height: 55px;
+    }
+
+    .hero-list-link{
+        font-size: 16px;
+    }
+}
+
+/*Десктопна версія*/
+@media (min-width: 1440px) {
+    .hero-img {
+        background-image:
+            url(../img/hero/glass_effect.png),
+            linear-gradient(-90deg,
+                #000 50%,
+                #69292d 68%,
+                #ed3b44 100%);
+        }
+    
+    @media screen and (min-resolution:192dpi) {
+        .hero-img {
+            background-image: url(../img/hero/glass_effect@2x.png),
+                linear-gradient(-90deg,
+                    #000 50%,
+                    #69292d 68%,
+                    #ed3b44 100%);
+            }
+        }
+
+    .hero-title {
+        font-size: 90px;
+        padding: 300px 146px 243px;
+    }
+}
