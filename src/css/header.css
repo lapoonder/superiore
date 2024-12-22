@@ -65,13 +65,13 @@
     letter-spacing: -0.02em;
     text-decoration: underline;
     color: #fafafa;
-    transition: color 250ms linear;
+    /* transition: color 250ms linear; */
   }
 
-  .header-btn-navigation:hover,
+  /* .header-btn-navigation:hover,
   .header-btn-navigation:focus {
     color: #ed3b44;
-  }
+  } */
 
   .header-btn-order {
     display: flex;
@@ -88,10 +88,10 @@
     transition: background-color 250ms linear;
   }
 
-  .header-btn-order:hover,
+  .header-btn-order:hover, 
   .header-btn-order:focus {
     background-color: #e0373f;
-  }
+  } 
 
   .header-navigation {
     position: absolute;
