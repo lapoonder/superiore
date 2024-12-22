@@ -24,10 +24,7 @@ const sectionFooter = document.querySelector("#work_together");
 btnOrderProject.addEventListener("click", orderProject);
 mobMenuNavigation.addEventListener("click", mobMenuClick);
 
-function orderProject(event) {
-    const btnTarget = event.target;
-    btnTarget.setAttribute("disabled", "");
-    // btnOrderProject.setAttribute("disabled", "")
+function orderProject() {
     modalWindow.classList.remove("is-open");
     sectionFooter.scrollIntoView({
     behavior: 'smooth', 
@@ -51,19 +48,13 @@ btnHeaderNavigtion.addEventListener("click", openNavMenu);
 menuNavigationTab.addEventListener("click", scrollMenu)
 
 function openNavMenu() {
-    if (menuNavigationTab.style.display === "flex") {
-        menuNavigationTab.style.display = "none";
-    } else {
-        menuNavigationTab.style.display = "flex";
-        menuNavigationTab.style.flexDirection = "column";
-        menuNavigationTab.style.alignItems = "center";
-    }
+    menuNavigationTab.classList.toggle("open-nav");
 };
 
 function scrollMenu(event) {
     const clickElement = event.target;
     if (clickElement.classList.contains("header-navigation-link")) {
-         menuNavigationTab.style.display = "none";
+        menuNavigationTab.classList.remove("open-nav");
     }
 };
 
