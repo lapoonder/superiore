@@ -63,8 +63,6 @@
 @media screen and (min-width: 768px) {
     .hero-img {
         background-image: url(../img/webp/hero-tab1x.webp);
-        background-size: cover;
-        background-repeat: no-repeat;
     }
     @media screen and (min-resolution: 192dpi) {
         .hero-img {
