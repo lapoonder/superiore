@@ -21,6 +21,7 @@ color: rgba(250, 250, 250, 0.4);
     background-color: aliceblue;
     padding: 32px 32px;
     height: auto;
+    border-radius: 24px 24px 0 0;
 }
 
 .tags-panel{
@@ -44,6 +45,9 @@ font-weight: 500;
 font-size: 16px;
 letter-spacing: -0.02em;
 color: black;
+ display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
 
 
@@ -103,6 +107,9 @@ padding: 14px;
 width: 52px;
 height: 52px;
  background-color: transparent;
+  display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
 
 .swiper-button-next{
@@ -112,6 +119,9 @@ padding: 14px;
 width: 52px;
 height: 52px;
  background-color: transparent;
+  display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
 
 .svg-one{
@@ -122,13 +132,23 @@ height: 52px;
     fill: transparent;
       stroke:white;
 }
-
-.swiper-button-next:disabled,
-.swiper-button-prev:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
+.swiper-slide{
+    width: 100%;
+}
+.img-project{
+width: 100%;
 }
 
+.swiper-button-prev:disabled,
+.swiper-button-next:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.swiper-button-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
 @media (min-width: 768px) {
  .projects-section{
     margin-top: 96px;
@@ -170,6 +190,8 @@ height: 55px;
 
 
 }
+
+
 .swiper-container{
    padding: 120px 45px;
       
@@ -201,16 +223,20 @@ height: 68px;
     margin-bottom: 164px;
 }
 .div-list-p{
-   
-    
-    padding-left: 32px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+   min-height: 100%;
+    border-radius:  24px 0  0 24px;
+    padding-left: 64px;
+    padding-top: 0;
+    padding-bottom: 64px;
     padding-right: auto;
     height: auto;
+    margin-top: 32px;
 }
 .all-div{
+    height: auto;
     display: flex;
+    align-items: stretch;
+
 }
 
 .tags-panel{
@@ -231,14 +257,15 @@ height: 55px;
 }
 .p-project{
     margin-top: 223px; 
- 
+ margin-right: 130px;
     font-size: 44px;
     line-height: 100%;
     letter-spacing: -0.03em;
+    margin-bottom: 32px;
 
 }
 .bth-project{
-
+margin-top: 0;
 padding: 18px 50px;
 width: 177px;
 height: 55px;
@@ -246,11 +273,16 @@ height: 55px;
 }
 
 .swiper-container{
+   width: 100%; 
+  height: auto;
    padding: 120px 37px;
-   
-    
-    width: 688px;
+   min-height: 100%;
+    border-radius: 0 24px 24px 0;
 } 
+.img-project{
+     display: block;
+     height: auto;
+}
 .nav-bth{
 height: 68px;
 margin-top: 64px;
@@ -271,5 +303,38 @@ height: 68px;
 
 }
 
+.div-list-p,
+.swiper-container {
+  flex: 1; 
+  display: flex;
+  flex-direction: column; 
+}
+.swiper-container,
+.div-list-p {
+    margin-top: 32px;
+    min-height: auto;
+     height: 625px;
+}
+ 
+       
+
 }
 
+
+.swiper-container {
+    overflow: hidden; 
+}
+
+.swiper-wrapper {
+    display: flex; 
+    transition: transform 0.3s ease; 
+}
+
+.swiper-slide {
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.swiper-slide-active {
+    opacity: 1; 
+}
