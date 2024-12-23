@@ -1,35 +1,24 @@
 'use strict';
 
-import Accordion from "./accordion.js";
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
-document.addEventListener('DOMContentLoaded', () => {
-    const accordion = new Accordion('.accordion', {
-        duration: 400,
-        showMultiple: false,
-        collapse: true,
-        elementClass: 'accordion__item',
-        triggerClass: 'ac-trigger',
-        panelClass: 'ac-panel',
-        activeClass: 'visible',
-    });
-    
-    console.log('Accordion initialized');
-});
+const accordion = new Accordion('.accordion-container', { showMultiple: true });
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const triggers = document.querySelectorAll('.ac-trigger');
+const arrows = document.querySelectorAll('.faq-ac-trigger');
 
-//     triggers.forEach(trigger => {
-//         trigger.addEventListener('click', () => {
-//             const body = trigger.parentElement.nextElementSibling;
-//             const iconUp = trigger.querySelector('.icon-up');
-//             const iconDown = trigger.querySelector('.icon-down');
+for (const arrow of arrows) {
+    arrow.addEventListener('click', UpDown);
+}
 
-//             body.classList.toggle('visible');
-//             trigger.classList.toggle('open');
-
-//             iconUp.style.display = body.classList.contains('visible') ? "none" : "inline";
-//             iconDown.style.display = body.classList.contains('visible') ? "inline" : "none";
-//         });
-//     });
-// });
+function UpDown(event) {
+    const arrowDown = event.currentTarget.querySelector('.faq-arrow-down');
+    const arrowUp = event.currentTarget.querySelector('.faq-arrow-up');
+    if (event.currentTarget.getAttribute('aria-expanded')) {
+        arrowDown.classList.add('visually-hidden');
+        arrowUp.classList.remove('visually-hidden');
+    } else {
+        arrowDown.classList.remove('visually-hidden');
+        arrowUp.classList.add('visually-hidden');
+    }
+}
