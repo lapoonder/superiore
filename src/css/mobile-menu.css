@@ -15,13 +15,13 @@
     transition: opacity 500ms linear, visibility 500ms linear;
 }
 
-.modal-overlay-menu.is-open{
+.modal-overlay-menu.is-open {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
     width: 100%;
     height: 100%;
-} 
+}
 
 .mobile-menu {
     position: absolute;
@@ -34,13 +34,14 @@
     padding-top: 30vh;
     width: 100%;
     height: 100vh;
-    background-image: url('../img/hero/hero-1x-mob.png');
+    background-image: url(../img/webp/modal1x.webp);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: repeat;
 }
-@media screen and (min-resolution:192dpi) {
+@media screen and (min-resolution: 192dpi) {
     .mobile-menu {
-        background-image: url(../img/hero/hero-2x-mob.png);
+        background-image: url(../img/webp/modal2x.webp);
     }
 }
 

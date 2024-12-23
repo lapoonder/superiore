@@ -9,6 +9,7 @@ btnClose.addEventListener("click", mobileMenuClose);
 
 function mobileMenuOpen() {
     modalWindow.classList.add("is-open");
+    btnOrderProject.removeAttribute("disabled");
 }
 
 function mobileMenuClose() {
@@ -39,3 +40,23 @@ function mobMenuClick(event) {
     
 }
 
+/*навігація для планшетної та десктопної версії*/
+const btnHeaderNavigtion = document.querySelector(".header-btn-navigation")
+const menuNavigationTab = document.querySelector(".header-navigation");
+
+btnHeaderNavigtion.addEventListener("click", openNavMenu);
+menuNavigationTab.addEventListener("click", scrollMenu)
+
+function openNavMenu() {
+    menuNavigationTab.classList.toggle("open-nav");
+};
+
+function scrollMenu(event) {
+    const clickElement = event.target;
+    if (clickElement.classList.contains("header-navigation-link")) {
+        menuNavigationTab.classList.remove("open-nav");
+    }
+};
+
+const btnOrderProjectHeader = document.querySelector(".header-btn-order");
+btnOrderProjectHeader.addEventListener("click", orderProject);
