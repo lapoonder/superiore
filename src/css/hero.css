@@ -56,6 +56,7 @@
     max-width: 52%;
 }
 
+
 .hero-list-item:hover,
 .hero-list-item:focus {
     border: 1px solid #fafafa;
@@ -97,6 +98,9 @@
     .hero-list-item {
         padding: 18px 20px;
         height: 55px;
+    }
+    .hero-list-item:nth-child(-n+4) {
+        max-width: 55px;
     }
 
     .hero-list-link {
