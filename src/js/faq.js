@@ -1,21 +1,24 @@
 'use strict';
 
-import Accordion from "./accordion.js";
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
-document.addEventListener('DOMContentLoaded', () => {
-    const triggers = document.querySelectorAll('.ac-trigger');
+const accordion = new Accordion('.accordion-container', { showMultiple: true });
 
-    triggers.forEach(trigger => {
-        trigger.addEventListener('click', () => {
-            const body = trigger.parentElement.nextElementSibling;
-            const iconUp = trigger.querySelector('.icon-up');
-            const iconDown = trigger.querySelector('.icon-down');
+const arrows = document.querySelectorAll('.faq-ac-trigger');
 
-            body.classList.toggle('visible');
-            trigger.classList.toggle('open');
+for (const arrow of arrows) {
+    arrow.addEventListener('click', changeDirectionArrow);
+}
 
-            iconUp.style.display = body.classList.contains('visible') ? "none" : "inline";
-            iconDown.style.display = body.classList.contains('visible') ? "inline" : "none";
-        });
-    });
-});
+function changeDirectionArrow(e) {
+    const arrowDown = e.currentTarget.querySelector('.faq-arrow-down');
+    const arrowUp = e.currentTarget.querySelector('.faq-arrow-up');
+    if (e.currentTarget.getAttribute('aria-expanded') === 'true') {
+        arrowDown.classList.add('visually-hidden');
+        arrowUp.classList.remove('visually-hidden');
+    } else if (e.currentTarget.getAttribute('aria-expanded') === 'false') {
+        arrowDown.classList.remove('visually-hidden');
+        arrowUp.classList.add('visually-hidden');
+    }
+}
