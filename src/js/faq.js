@@ -11,18 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const iconUp = trigger.querySelector('.icon-up');
             const iconDown = trigger.querySelector('.icon-down');
 
-            
-            if (body.classList.contains("active")) {
-                body.classList.remove("active");
-                body.style.display = "none"
-            }
-            else {
-                body.classList.add("active");
-                body.style.display = "block"
-            }
+            body.classList.toggle('visible');
+            trigger.classList.toggle('open');
 
-            iconUp.style.display = body.classList.contains("active") ? "none" : "inline";
-            iconDown.style.display = body.classList.contains("active") ? "inline" : "none";
+            iconUp.style.display = body.classList.contains('visible') ? "none" : "inline";
+            iconDown.style.display = body.classList.contains('visible') ? "inline" : "none";
         });
     });
-})
+});
