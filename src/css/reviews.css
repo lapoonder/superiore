@@ -1,11 +1,13 @@
 .arrows {
-    display: flex;
+    height: 52px;
+    margin-top: 32px;
     justify-content: center;
+    display: flex;
     gap: 12px;
 }
 
-.arrow-right,
-.arrow-left {
+.swiper-button-prev,
+.swiper-button-next {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,14 +18,21 @@
     padding: 14px;
     width: 52px;
     height: 52px;
-    background-color: inherit;
-    color: #fafafa;
+    background-color: transparent;
 }
 
-.svg-left {
-    fill: transparent;
-    stroke: white;
+.swiper-button-disabled {
+    opacity: 0.3;
+    pointer-events: none;
 }
+
+.swiper-button-prev:disabled,
+.swiper-button-next:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.svg-left,
 .svg-right {
     fill: transparent;
     stroke: white;
@@ -31,20 +40,24 @@
 
 .cards {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 16px;
-    margin-bottom: 32px;
 }
 
 .swiper {
     overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    background-color: transparent;
+    max-width: 343px;
+    min-width: 288px;
+    width: 100%;
 }
 
 .review-card {
     max-width: 343px;
-    min-width: 320px;
+    min-width: 288px;
+    width: 100%;
     height: 302px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 20px;
@@ -69,21 +82,24 @@
 }
 
 .card-paragraph {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: rgba(250, 250, 250, 0.6);
-}
-
-.disabled {
-    stroke: #3b3b3b;
-    border-color: #3b3b3b;
+    max-width: 295px;
+    width: 100%;
+    max-height: 158px;
+    overflow: hidden;
 }
 
 @media (min-width: 768px) {
-    .review-card {
-        width: calc((100% - 16px) / 2);
+    .swiper {
+        max-width: 704px;
+        padding: 0 1px;
     }
 }
 
@@ -91,7 +107,8 @@
     .section-title {
         margin-bottom: 32px;
     }
-    .review-card {
-        width: calc((100% - 48px) / 4);
+
+    .swiper {
+        max-width: 1376px;
     }
 }

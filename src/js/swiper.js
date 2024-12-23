@@ -1,4 +1,5 @@
 'use strict';
+import 'swiper/css';
 
 import Swiper from 'swiper';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';

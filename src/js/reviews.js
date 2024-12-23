@@ -3,34 +3,55 @@
 import getReviews from './goit-reviewsAPI.js';
 import iziToast from 'izitoast';
 import Swiper from 'swiper';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
 const cards = document.querySelector('.cards');
 
 loadReviews();
 
-const swiper = new Swiper('.swiper', {
-    speed: 400,
+const swiperRev = new Swiper('.swiper', {
+    modules: [Navigation, Keyboard, Mousewheel],
     slidesPerView: 1,
-    spaceBetween: 16,
+    spaceBetween: 0,
+    speed: 400,
+    loop: false,
+    grabCursor: true,
+    navigation: {
+        nextEl: '.arrows .swiper-button-next',
+        prevEl: '.arrows .swiper-button-prev',
+    },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+    },
+    mousewheel: true,
+
+    on: {
+        slideChange: function () {
+            const prev = document.querySelector('.swiper-button-prev');
+            const next = document.querySelector('.swiper-button-next');
+
+            prev.disabled = swiperRev.isBeginning;
+            next.disabled = swiperRev.isEnd;
+
+            prev.classList.toggle(
+                'swiper-button-disabled',
+                swiperRev.isBeginning
+            );
+            next.classList.toggle('swiper-button-disabled', swiperRev.isEnd);
+        },
+    },
     breakpoints: {
         768: {
-            slidesPerView: 2, // Для экранов от 768px показываем две карточки
+            slidesPerView: 2,
+            spaceBetween: 16,
         },
         1440: {
-            slidesPerView: 4, // Для экранов от 1440px показываем четыре карточки
+            slidesPerView: 4,
+            spaceBetween: 16,
         },
     },
-    navigation: {
-        nextEl: 'arrow-right',
-        prevEl: 'arrow-left',
-    },
 });
-
-const swi = document.querySelector('.swiper').swiper;
-
-// Now you can use all slider methods like
-swiper.slideNext();
 
 async function loadReviews() {
     try {
