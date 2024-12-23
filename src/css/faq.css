@@ -49,7 +49,7 @@
 }
 
 .ac-panel {
-    transition: max-height 0.3s ease, opacity 0.3s ease, padding-bottom 0.3s ease;
+    transition: max-height 0.7s ease, opacity 0.7s ease, padding-bottom 0.7s ease;
 }
 
 .accordion-header.open {
@@ -74,11 +74,11 @@
     overflow: hidden;
     padding-bottom: 0;
     opacity: 0;
-    transition: max-height 0.3s ease, padding-bottom 0.3s ease;
+    transition: max-height 0.7s ease, padding-bottom 0.7s ease;
 }
 
 .accordion-body.visible {
-    max-height: 200px;
+    max-height: 150px;
     padding-bottom: 20px;
     visibility: visible;
     opacity: 1;
@@ -207,11 +207,13 @@
     }
 
     .ac-panel {
-        transition: max-height 0.3s ease, opacity 0.3s ease, padding-bottom 0.3s ease;
+        transition: max-height 0.7s ease, opacity 0.7s ease, padding-bottom 0.7s ease;
     }
 
     .accordion-body.visible {
         padding-bottom: 26px;
+        max-height: 100px;
+        opacity: 1;
     }
 
     .fag-li {
@@ -219,6 +221,10 @@
     }
 
     .accordion-body {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+
         width: 656px;
     }
 
