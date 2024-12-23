@@ -39,7 +39,7 @@
     border: none;
     cursor: pointer;
     margin-top: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -48,19 +48,45 @@
     width: 100%;
 }
 
+.ac-panel {
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding-bottom 0.3s ease;
+}
+
+.accordion-header.open {
+    margin-bottom: 16px;
+}
+
+.ac-panel.visible {
+    max-height: 500px;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+
 .accordion-body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: rgba(250, 250, 250, 0.6);
-    padding-bottom: 20px;
-    display: none;
+    /* padding-bottom: 20px;
+    display: none; */
+    max-height: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, padding-bottom 0.3s ease;
 }
 
-.accordion-body.active {
-    display: block;
+.accordion-body.visible {
+    max-height: 200px;
+    padding-bottom: 20px;
+    visibility: visible;
+    opacity: 1;
 }
+
+/* .accordion-body.active {
+    display: block;
+} */
 
 
 .accordion>li:nth-child(1) .accordion-text {
@@ -89,6 +115,10 @@
     stroke: white;
 }
 
+.icon-div {
+    height: 34px;
+}
+
 .icon-up {
     display: inline;
 }
@@ -107,7 +137,24 @@
 
     .accordion-header {
         margin-top: 32px;
+        margin-bottom: 42px;
+    }
+
+    /* .ac-panel {
+        display: none;
+        margin-top: 0;
+    } */
+
+    .accordion-header.open {
         margin-bottom: 26px;
+    }
+
+    /* .ac-panel.visible {
+        display: block;
+    } */
+
+    .accordion-body.visible {
+        padding-bottom: 24px;
     }
 
     .accordion>li:nth-child(1) .accordion-text {
@@ -123,8 +170,13 @@
     }
 
     .accordion-body {
-        padding-bottom: 24px;
+        /* padding-bottom: 24px; */
         width: 640px;
+
+    }
+
+    .accordion-header {
+        /* margin-bottom: 42px; */
     }
 
     .fag-ul {
@@ -152,6 +204,14 @@
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         align-items: stretch;
+    }
+
+    .ac-panel {
+        transition: max-height 0.3s ease, opacity 0.3s ease, padding-bottom 0.3s ease;
+    }
+
+    .accordion-body.visible {
+        padding-bottom: 26px;
     }
 
     .fag-li {
@@ -204,6 +264,6 @@
     }
 
     .accordion-body {
-        padding-bottom: 26px;
+        /* padding-bottom: 26px; */
     }
 }
