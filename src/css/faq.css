@@ -58,6 +58,11 @@
     display: none;
 }
 
+.accordion-body.active {
+    display: block;
+}
+
+
 .accordion>li:nth-child(1) .accordion-text {
     width: 265px;
 }
@@ -85,7 +90,7 @@
 }
 
 .icon-up {
-    /* display: none; */
+    display: inline;
 }
 
 .icon-down {
