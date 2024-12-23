@@ -107,6 +107,9 @@ padding: 14px;
 width: 52px;
 height: 52px;
  background-color: transparent;
+  display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
 
 .swiper-button-next{
@@ -116,6 +119,9 @@ padding: 14px;
 width: 52px;
 height: 52px;
  background-color: transparent;
+  display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
 
 .svg-one{
@@ -125,6 +131,12 @@ height: 52px;
 .svg-two{
     fill: transparent;
       stroke:white;
+}
+.swiper-slide{
+    width: 100%;
+}
+.img-project{
+width: 100%;
 }
 
 .swiper-button-prev:disabled,
@@ -178,6 +190,8 @@ height: 55px;
 
 
 }
+
+
 .swiper-container{
    padding: 120px 45px;
       
@@ -209,17 +223,20 @@ height: 68px;
     margin-bottom: 164px;
 }
 .div-list-p{
-   
+   min-height: 100%;
     border-radius:  24px 0  0 24px;
-    padding-left: 32px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-left: 64px;
+    padding-top: 0;
+    padding-bottom: 64px;
     padding-right: auto;
     height: auto;
+    margin-top: 32px;
 }
 .all-div{
+    height: auto;
     display: flex;
-    
+    align-items: stretch;
+
 }
 
 .tags-panel{
@@ -240,10 +257,11 @@ height: 55px;
 }
 .p-project{
     margin-top: 223px; 
- 
+ margin-right: 130px;
     font-size: 44px;
     line-height: 100%;
     letter-spacing: -0.03em;
+    margin-bottom: 32px;
 
 }
 .bth-project{
@@ -255,11 +273,16 @@ height: 55px;
 }
 
 .swiper-container{
+   width: 100%; 
+  height: auto;
    padding: 120px 37px;
-   
+   min-height: 100%;
     border-radius: 0 24px 24px 0;
-    width: 688px;
 } 
+.img-project{
+     display: block;
+     height: auto;
+}
 .nav-bth{
 height: 68px;
 margin-top: 64px;
@@ -280,4 +303,35 @@ height: 68px;
 
 }
 
+.div-list-p,
+.swiper-container {
+  flex: 1; 
+  display: flex;
+  flex-direction: column; 
+}
+.swiper-container,
+.div-list-p {
+    height: 100%; 
+    min-height: auto;
+}
+
+}
+
+
+.swiper-container {
+    overflow: hidden; 
+}
+
+.swiper-wrapper {
+    display: flex; 
+    transition: transform 0.3s ease; 
+}
+
+.swiper-slide {
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.swiper-slide-active {
+    opacity: 1; 
 }
