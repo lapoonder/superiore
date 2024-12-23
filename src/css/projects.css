@@ -44,6 +44,9 @@ font-weight: 500;
 font-size: 16px;
 letter-spacing: -0.02em;
 color: black;
+ display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
 
 
@@ -123,12 +126,16 @@ height: 52px;
       stroke:white;
 }
 
-.swiper-button-next:disabled,
-.swiper-button-prev:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
+.swiper-button-prev:disabled,
+.swiper-button-next:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
+.swiper-button-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
 @media (min-width: 768px) {
  .projects-section{
     margin-top: 96px;
@@ -248,7 +255,7 @@ height: 55px;
 .swiper-container{
    padding: 120px 37px;
    
-    
+    border-radius: 0 24px 24px 0;
     width: 688px;
 } 
 .nav-bth{
@@ -272,4 +279,3 @@ height: 68px;
 }
 
 }
-
