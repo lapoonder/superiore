@@ -165,3 +165,18 @@
         font-size: 16px;
     }
 }
+
+@media (min-width: 1440px) {
+    .footer {
+        padding-left: 196px;
+        padding-right: 196px;
+    }
+
+    .form-input {
+        width: 390px;
+    }
+
+    .btn-form {
+        margin-left: 54px;
+    }
+}
