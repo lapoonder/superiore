@@ -14,24 +14,24 @@
                 <picture>
                     <source
                         srcset="
-                            /img/about_me_desk.jpg    1x,
+                            /img/about_me_desk.jpg   1x,
                             /img/about_me_desk@2.jpg 2x
                         "
                         media="(min-width: 1440px)"
                     />
                     <source
                         srcset="
-                            /img/about_me_tab.jpg    1x,
-                            /img/about_me_tab@2.jpg 2x
-                        "
-                        media="(min-width: 768px)"
-                    />
-                    <source
-                        srcset="
-                            /img/about_me_mob.jpg   1x,
+                            /img/about_me_mob.jpg    1x,
                             /img/about_me_mob@2x.jpg 2x
                         "
                         media="(max-width: 767px)"
+                    />
+                    <source
+                        srcset="
+                            /img/about_me_tab.jpg   1x,
+                            /img/about_me_tab@2.jpg 2x
+                        "
+                        media="(min-width: 768px)"
                     />
                     <img
                         loading="lazy"
@@ -108,7 +108,9 @@
                                     width="20"
                                     height="20"
                                 >
-                                    <use href="/img/sprite.svg#icon-arrow-up"></use>
+                                    <use
+                                        href="/img/sprite.svg#icon-arrow-up"
+                                    ></use>
                                 </svg>
                                 <svg
                                     class="about-icon about-icon-down"
@@ -191,7 +193,9 @@
                         width="40"
                         height="40"
                     >
-                        <use href="./img/sprite.svg#icon-arrow-narrow-right"></use>
+                        <use
+                            href="./img/sprite.svg#icon-arrow-narrow-right"
+                        ></use>
                     </svg>
                 </div>
             </button>

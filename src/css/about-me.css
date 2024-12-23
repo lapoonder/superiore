@@ -28,9 +28,11 @@
 
 .discr-card {
     border-radius: 24px;
-    max-width: 343px;
     min-width: 288px;
-    height: 500px;
+    max-width: 343px;
+    max-height: 500px;
+    width: 100%;
+    height: calc((100vw * 1.418) - 32px);
     background: #242527;
 }
 
@@ -39,7 +41,7 @@
     line-height: 117%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #FAFAFA;
+    color: #fafafa;
     max-width: 279px;
     height: auto;
     margin-top: 32px;
@@ -47,11 +49,11 @@
     margin-right: 32px;
 }
 
-.discr-text>.accent-first {
-    color: #ED3B44;
+.discr-text > .accent-first {
+    color: #ed3b44;
 }
 
-.discr-text>.accent-second {
+.discr-text > .accent-second {
     color: rgba(250, 250, 250, 0.4);
 }
 
@@ -115,7 +117,7 @@
     width: 36px;
     height: 36px;
     fill: transparent;
-    stroke:#FAFAFA;
+    stroke: #fafafa;
     margin-left: 23px;
     background-color: transparent;
 }
@@ -128,19 +130,19 @@
     display: block;
 }
 
-.accordion-header[aria-expanded="true"] .about-icon-up {
+.accordion-header[aria-expanded='true'] .about-icon-up {
     display: block;
 }
 
-.accordion-header[aria-expanded="true"] .about-icon-down {
+.accordion-header[aria-expanded='true'] .about-icon-down {
     display: none;
 }
 
-.accordion-header[aria-expanded="false"] .about-icon-up {
+.accordion-header[aria-expanded='false'] .about-icon-up {
     display: none;
 }
 
-.accordion-header[aria-expanded="false"] .about-icon-down {
+.accordion-header[aria-expanded='false'] .about-icon-down {
     display: block;
 }
 
@@ -148,23 +150,22 @@
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.02em;
-    color: #FAFAFA;
+    color: #fafafa;
     display: none;
     padding-top: 12px;
     padding-bottom: 20px;
-
 }
 
 .accordion-item.open .accordion-content {
     display: block;
 }
 
-.accordion-about-text{
+.accordion-about-text {
     margin-top: 32px;
 }
 
-.accordion-role-list{
-display: flex;
+.accordion-role-list {
+    display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
@@ -172,24 +173,22 @@ display: flex;
     margin-bottom: 20px;
 }
 
-
 .skills-list {
     font-size: 16px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
 
-
     flex-direction: column;
-    /*
-    flex-direction: row;
-    */
+
+    /* flex-direction: row; */
+
     gap: 0px;
     margin-top: 32px;
     margin-bottom: 20px;
 }
 
-.skills-list-items{
+.skills-list-items {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,26 +200,26 @@ display: flex;
 }
 
 .skills-list-items.chosen {
-    background-color: #ED3B44;
+    background-color: #ed3b44;
 }
 
-.about-svg-side-icon{
-        display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            fill: transparent;
-            stroke: #3B3B3B;
-            margin-left: 64px;
-            background-color: transparent;
+.about-svg-side-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    fill: transparent;
+    stroke: #3b3b3b;
+    margin-left: 64px;
+    background-color: transparent;
 }
 
-.about-side-icon{}
+.about-side-icon {
+}
 
-.icon-right{}
-
-
+.icon-right {
+}
 
 @media screen and (min-width: 768px) {
     .about-me {
@@ -228,134 +227,139 @@ display: flex;
         margin-bottom: 64px;
     }
 
-    .about-me>.container {
+    .about-me > .container {
         padding: 0 32px;
     }
 
-                .about-me-discr {
-                     margin-bottom: 12px;
+    .about-me-discr {
+        margin-bottom: 12px;
     }
-    
+
     .discr-card {
         width: 704px;
         height: 700px;
+        min-width: none;
+        max-width: none;
+        max-height: none;
     }
-    
+
     .discr-text {
         font-size: 38px;
         line-height: 105%;
         width: 576px;
+        max-width: none;
         margin-top: 64px;
         margin-left: 64px;
         margin-right: 64px;
     }
-    
+
     .discr-img {
+        max-width: 704px;
         width: 704px;
     }
-    
+
     .accordion {
         margin-top: 12px;
         width: 704px;
+        max-width: none;
     }
-    
-     .accordion-header {
+
+    .accordion-header {
         padding-top: 20px;
         padding-bottom: 12px;
     }
-    
+
     .accordion-content {
         padding-top: 12px;
         padding-bottom: 20px;
-    
     }
 
     .accordion-about-text {
         margin-top: 16px;
-     }
-    
-        .skills-list-items {
-            font-size: 20px;
-            width: 200px;
-            height: 200px;
-        }
-    
-        .about-side-icon {}
-    
-        .icon-right {}
+    }
 
+    .skills-list-items {
+        font-size: 20px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-side-icon {
+    }
+
+    .icon-right {
+    }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
     .about-me {
         margin-top: 100px;
         margin-bottom: 100px;
     }
 
-        .about-me-discr {
-            flex-direction: row;
-            gap: 16px;
-            margin-bottom: 96px;
-        }
-    
-        .discr-card {
-        max-width: 680px;
-        }
-    
-        .discr-text {
-        max-width: 552px;
-        }
-    
-        .discr-img {
-        max-width: 680px;
+    .about-me-discr {
+        flex-direction: row;
+        gap: 16px;
+        margin-bottom: 96px;
+    }
 
-        }
-    
-        .accordion {
-            max-width: 1376px;
-            width: 100%;
-        }
-    
-        .accordion-header {
-            padding-top: 32px;
-            padding-bottom: 32px;
-        }
-    
-        .about-svg-icon {
-            width: 40px;
-            height: 40px;
-        }
-    
-        .accordion-content {
-            width: 612px;
-margin-left: 696px;
-padding-top: 0px;
-            padding-bottom: 32px;
-    
-        }
-    
-        .accordion-about-text {
-            margin-top: 32px;
-        }
-    
-        .skills{
+    .discr-card {
+        max-width: 680px;
+    }
+
+    .discr-text {
+        max-width: 552px;
+    }
+
+    .discr-img {
+        max-width: 680px;
+    }
+
+    .accordion {
+        max-width: 1376px;
+        width: 100%;
+    }
+
+    .accordion-header {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .about-svg-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .accordion-content {
+        width: 612px;
+        margin-left: 696px;
+        padding-top: 0px;
+        padding-bottom: 32px;
+    }
+
+    .accordion-about-text {
+        margin-top: 32px;
+    }
+
+    .skills {
         margin-top: 96px;
         margin-left: 32px;
         margin-right: 32px;
-        }
-    
-        .skills-list {
-            flex-direction: row;
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-    
-        .about-svg-side-icon {
-            margin-left: 72px;
-        }
-    
-        .about-side-icon {}
-    
-        .icon-right {}
+    }
 
+    .skills-list {
+        flex-direction: row;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .about-svg-side-icon {
+        margin-left: 72px;
+    }
+
+    .about-side-icon {
+    }
+
+    .icon-right {
+    }
 }
