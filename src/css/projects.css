@@ -265,7 +265,7 @@ height: 55px;
 
 }
 .bth-project{
-
+margin-top: 0;
 padding: 18px 50px;
 width: 177px;
 height: 55px;
@@ -311,9 +311,12 @@ height: 68px;
 }
 .swiper-container,
 .div-list-p {
-    height: 100%; 
+    margin-top: 32px;
     min-height: auto;
+     height: 625px;
 }
+ 
+       
 
 }
 
