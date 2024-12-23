@@ -114,7 +114,8 @@
     padding: 9px;
     width: 36px;
     height: 36px;
-    fill: #FAFAFA;
+    fill: transparent;
+    stroke:#FAFAFA;
     margin-left: 23px;
     background-color: transparent;
 }
@@ -209,7 +210,8 @@ display: flex;
             justify-content: center;
             width: 40px;
             height: 40px;
-            fill: #FAFAFA;
+            fill: transparent;
+            stroke: #3B3B3B;
             margin-left: 64px;
             background-color: transparent;
 }
@@ -235,27 +237,26 @@ display: flex;
     }
     
     .discr-card {
-        max-width: 704px;
+        width: 704px;
         height: 700px;
     }
     
     .discr-text {
         font-size: 38px;
         line-height: 105%;
-        max-width: 576px;
+        width: 576px;
         margin-top: 64px;
         margin-left: 64px;
         margin-right: 64px;
     }
     
     .discr-img {
-        max-width: 704px;
-        min-width: 704px;
+        width: 704px;
     }
     
     .accordion {
         margin-top: 12px;
-        max-width: 704px;
+        width: 704px;
     }
     
      .accordion-header {
@@ -291,9 +292,70 @@ display: flex;
         margin-bottom: 100px;
     }
 
-    .about-me>.container {
-        padding: 0 65px;
-    }
+        .about-me-discr {
+            flex-direction: row;
+            gap: 16px;
+            margin-bottom: 96px;
+        }
+    
+        .discr-card {
+        max-width: 680px;
+        }
+    
+        .discr-text {
+        max-width: 552px;
+        }
+    
+        .discr-img {
+        max-width: 680px;
 
+        }
+    
+        .accordion {
+            max-width: 1376px;
+            width: 100%;
+        }
+    
+        .accordion-header {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+    
+        .about-svg-icon {
+            width: 40px;
+            height: 40px;
+        }
+    
+        .accordion-content {
+            width: 612px;
+margin-left: 696px;
+padding-top: 0px;
+            padding-bottom: 32px;
+    
+        }
+    
+        .accordion-about-text {
+            margin-top: 32px;
+        }
+    
+        .skills{
+        margin-top: 96px;
+        margin-left: 32px;
+        margin-right: 32px;
+        }
+    
+        .skills-list {
+            flex-direction: row;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    
+        .about-svg-side-icon {
+            margin-left: 72px;
+        }
+    
+        .about-side-icon {}
+    
+        .icon-right {}
 
 }
