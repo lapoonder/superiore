@@ -6,8 +6,25 @@ import Swiper from 'swiper';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
 const cards = document.querySelector('.cards');
+const reviewsSection = document.querySelector('.reviews');
+let isReviewsLoaded = false;
 
-loadReviews();
+window.addEventListener('scroll', () => {
+    if (!isReviewsLoaded && isElementInViewport(reviewsSection)) {
+        loadReviews();
+        isReviewsLoaded = true;
+    }
+});
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= window.innerHeight &&
+        rect.right <= window.innerWidth
+    );
+}
 
 const swiperRev = new Swiper('.reviews .swiper', {
     modules: [Navigation, Keyboard, Mousewheel],
