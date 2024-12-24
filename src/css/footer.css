@@ -1,6 +1,14 @@
 .footer {
     padding-top: 32px;
     padding-bottom: 32px;
+    background-image: url(../img/glass-effect-2-mob.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+@media (min-resolution: 192dpi) {
+    .footer {
+        background-image: url(../img/glass-effect-2-mob-2x.png);
+    }
 }
 
 .footer-section {
@@ -126,6 +134,13 @@
     .footer {
         padding-top: 80px;
         padding-bottom: 169px;
+        background-image: url(../img/glass-effect-2-tab.png);
+    }
+
+    @media (min-resolution: 192dpi) {
+        .footer {
+            background-image: url(../img/glass-effect-2-tab-2x.png);
+        }
     }
 
     .footer-image {
@@ -170,6 +185,13 @@
     .footer {
         padding-left: 196px;
         padding-right: 196px;
+        background-image: url(../img/glass-effect-2-desc.png);
+    }
+
+    @media (min-resolution: 192dpi) {
+        .footer {
+            background-image: url(../img/glass-effect-2-desc-2x.png);
+        }
     }
 
     .form-input {
