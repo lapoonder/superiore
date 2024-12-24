@@ -113,15 +113,6 @@ li.ac .ac-panel .ac-text {
         width: 656px;
     }
 
-    .h4-last-elem {
-        display: flex;
-        width: 485px;
-    }
-
-
-
-
-
     .ac:nth-child(1) {
         order: 1;
         
