@@ -1,110 +1,147 @@
-.fag-ul {
-    padding: 0;
-    list-style: none;
-    margin: 0 auto;
+li.ac {
+    background-color: #1c1d20;
+    color: #fafafa;
+    padding: 20px 0;
+    margin-top: 0;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-right: none;
+    border-left: none;
+    max-width: 343px;
 }
 
-.fag-h1 {
+.faq-title {
     font-weight: 600;
     font-size: 16px;
+    color: rgba(250, 250, 250, 0.4);
+    padding-bottom: 32px;
+}
+
+.ac-header .ac-trigger .faq-ac-trigger {
+    font-weight: 600;
+    font-size: 20px;
     line-height: 1.5;
     letter-spacing: -0.02em;
-    color: rgba(250, 250, 250, 0.4);
-    width: 284px;
-    margin-bottom: 32px;
+    position: relative;
+    width: 80%;
+    padding-bottom: 16px;
 }
 
-.fag-li {
-    display: flex;
-    flex-direction: column;
-    width: 343px;
-    border-top: 1px solid rgba(250, 250, 250, 0.2);
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-}
-
-.accordion-header {
+li.ac .ac-trigger {
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: #fafafa;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 16px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    text-align: left;
-    padding: 0;
-    width: 100%;
+    padding: 0 50px 0 0;
 }
 
-.accordion-body {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
+li.ac .ac-panel .ac-text {
     color: rgba(250, 250, 250, 0.6);
-    padding-bottom: 20px;
-    /* display: none; */
 }
 
-.icon-sec {
-    border-radius: 50%;
-    display: flex;
-    padding: 7px;
-    width: 34px;
-    height: 34px;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    cursor: pointer;
-    fill: transparent;
-    stroke: white;
-    margin-left: 44px;
+.ac-trigger {
+    padding: 0;
 }
 
-.icon-up {
+.ac-trigger::after {
     display: none;
 }
 
-.icon-down {
-    /* display: none; */
+.faq-btn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 100px;
+    padding: 7px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1d20;
+    fill: transparent;
+    stroke: white;
 }
 
-
-
+#faq p.ac-text {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px 0 0;
+}
 
 @media only screen and (min-width: 768px) {
-    .fag-li {
-        width: 704px;
+    #faq p.ac-text {
+        padding: 26px 0 0;
     }
 
-    .accordion-header {
-        margin-top: 32px;
-        margin-bottom: 26px;
+    .faq-btn {
+        top: 0;
     }
 
-    .accordion-body {
-        padding-bottom: 24px;
-        width: 640px;
+    li.ac {
+        padding: 32px 0 24px;
+        max-width: 704px;
     }
 
-    .fag-ul {
+    .ac-header {
+        padding-bottom: 26px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .h4-last-elem {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 485px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    li.ac {
+        padding: 32px 32px 26px 0;
+        max-width: 688px;
     }
 
-    .icon-sec {
-        border: 1px solid rgba(250, 250, 250, 0.2);
-        border-radius: 100px;
-        padding: 10px;
-        width: 40px;
-        height: 40px;
-        margin-left: 8px;
+    .accordion-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ac-text {
+        width: 656px;
+    }
+
+    .ac:nth-child(1) {
+        order: 1;
+        
+    }
+
+    .ac:nth-child(2) {
+        order: 3;
+        
+    }
+
+    .ac:nth-child(3) {
+        order: 5;
+    }
+
+    .ac:nth-child(4) {
+        order: 2;
+        border-left: 1px solid rgba(250, 250, 250, 0.2);
+        padding: 32px 0px 32px 32px;
+    }
+
+    .ac:nth-child(5) {
+        order: 4;
+        border-left: 1px solid rgba(250, 250, 250, 0.2);
+        padding: 32px 0px 32px 32px;
+    }
+
+    .ac:nth-child(6) {
+        order: 6;
+        border-left: 1px solid rgba(250, 250, 250, 0.2);
+        padding: 32px 0px 32px 32px;
     }
 }

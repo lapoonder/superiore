@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 h1,
@@ -11,73 +11,107 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+    margin: 0;
 }
 
 ul,
 ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 ul li,
 ol li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 button {
-  font-family: inherit;
-  color: currentColor;
-  cursor: pointer;
-  color: #ed3b44;
+    font-family: inherit;
+    color: currentColor;
+    cursor: pointer;
+    color: #ed3b44;
 }
 
 a {
-  color: currentColor;
-  text-decoration: none;
+    color: currentColor;
+    text-decoration: none;
 }
 
 input {
-  font-family: inherit;
+    font-family: inherit;
 }
 
 fieldset {
-  padding: 0;
-  margin: 0;
-  border: none;
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #fafafa;
-  letter-spacing: -0.02em;
-  background-color: #1c1d20;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fafafa;
+    letter-spacing: -0.02em;
+    background-color: #1c1d20;
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.btn-up {
+    position: fixed;
+    background-color: #ed3b44;
+    right: 24px;
+    bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 50px;
+}
+
+.btn-up::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+
+.btn-up_hide {
+    display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+        background-color: #e0373f;
+    }
 }

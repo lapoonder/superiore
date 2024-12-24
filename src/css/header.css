@@ -65,13 +65,8 @@
     letter-spacing: -0.02em;
     text-decoration: underline;
     color: #fafafa;
-    transition: color 250ms linear;
   }
 
-  .header-btn-navigation:hover,
-  .header-btn-navigation:focus {
-    color: #ed3b44;
-  }
 
   .header-btn-order {
     display: flex;
@@ -88,18 +83,26 @@
     transition: background-color 250ms linear;
   }
 
-  .header-btn-order:hover,
+  .header-btn-order:hover, 
   .header-btn-order:focus {
     background-color: #e0373f;
-  }
+  } 
 
   .header-navigation {
     position: absolute;
     top: 40px;
+    /* display: none; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms linear;
+  }
+
+  .open-nav {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .header-navigation-link {
