@@ -9,7 +9,7 @@ const cards = document.querySelector('.cards');
 
 loadReviews();
 
-const swiperRev = new Swiper('.swiper', {
+const swiperRev = new Swiper('.reviews .swiper', {
     modules: [Navigation, Keyboard, Mousewheel],
     slidesPerView: 1,
     spaceBetween: 0,
