@@ -57,8 +57,12 @@ li.ac .ac-panel .ac-text {
     padding: 7px;
     width: 34px;
     height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #1c1d20;
-    fill: #fafafa;
+    fill: transparent;
+    stroke: white;
 }
 
 #faq p.ac-text {
@@ -74,7 +78,7 @@ li.ac .ac-panel .ac-text {
     }
 
     .faq-btn {
-        top: auto;
+        top: 0;
     }
 
     li.ac {
@@ -87,21 +91,66 @@ li.ac .ac-panel .ac-text {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .h4-last-elem {
+        display: flex;
+        width: 485px;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
     li.ac {
         padding: 32px 32px 26px 0;
-        max-width: 680px;
-    }
-
-    li.ac:nth-child(2n) {
-        padding: 32px 0 26px 32px;
-        border-left: 1px solid rgba(250, 250, 250, 0.2);
+        max-width: 688px;
     }
 
     .accordion-container {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .ac-text {
+        width: 656px;
+    }
+
+    .h4-last-elem {
+        display: flex;
+        width: 485px;
+    }
+
+
+
+
+
+    .ac:nth-child(1) {
+        order: 1;
+        
+    }
+
+    .ac:nth-child(2) {
+        order: 3;
+        
+    }
+
+    .ac:nth-child(3) {
+        order: 5;
+    }
+
+    .ac:nth-child(4) {
+        order: 2;
+        border-left: 1px solid rgba(250, 250, 250, 0.2);
+        padding: 32px 0px 32px 32px;
+    }
+
+    .ac:nth-child(5) {
+        order: 4;
+        border-left: 1px solid rgba(250, 250, 250, 0.2);
+        padding: 32px 0px 32px 32px;
+    }
+
+    .ac:nth-child(6) {
+        order: 6;
+        border-left: 1px solid rgba(250, 250, 250, 0.2);
+        padding: 32px 0px 32px 32px;
     }
 }

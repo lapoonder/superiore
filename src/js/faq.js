@@ -14,7 +14,7 @@ for (const arrow of arrows) {
 function UpDown(event) {
     const arrowDown = event.currentTarget.querySelector('.faq-arrow-down');
     const arrowUp = event.currentTarget.querySelector('.faq-arrow-up');
-    if (event.currentTarget.getAttribute('aria-expanded')) {
+    if (event.currentTarget.getAttribute('aria-expanded') === 'true') {
         arrowDown.classList.add('visually-hidden');
         arrowUp.classList.remove('visually-hidden');
     } else {
