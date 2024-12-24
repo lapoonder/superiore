@@ -16,7 +16,7 @@ const swiper = new Swiper('.swiper-container', {
     },
 
     keyboard: {
-        enabled: true,
+        benabled: true,
         onlyInViewport: true,
     },
 
