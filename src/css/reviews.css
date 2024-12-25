@@ -57,6 +57,7 @@
 .reviews .swiper-slide {
     opacity: 1;
     height: 302px;
+    align-items: flex-start;
 }
 
 .review-card {
@@ -135,5 +136,9 @@
 
     .review-card {
         width: calc((100% - 48px) / 4);
+    }
+
+    .reviews .swiper-slide {
+        flex-direction: column;
     }
 }
