@@ -16,11 +16,9 @@
 .projects-list {
     position: relative;
     top: calc(-162px);
-    /* left: calc(-282px * 2); */
     display: flex;
-    gap: 23px;
-    /* transform: rotate(16deg); */
-    animation: moving-projects 10s linear infinite;
+    gap:  23px;
+    animation: moving-projects 15s linear infinite;
 }
 
 .projects-list:nth-child(2n) {

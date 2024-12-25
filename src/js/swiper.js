@@ -11,12 +11,12 @@ const swiper = new Swiper('.swiper-container', {
     loop: false,
 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next[data-swiper-id="1"]',
+        prevEl: '.swiper-button-prev[data-swiper-id="1"]',
     },
 
     keyboard: {
-        enabled: true,
+        benabled: true,
         onlyInViewport: true,
     },
 
@@ -24,13 +24,20 @@ const swiper = new Swiper('.swiper-container', {
 
     on: {
         slideChange: function () {
-            const prevButton = document.querySelector('.swiper-button-prev');
-            const nextButton = document.querySelector('.swiper-button-next');
+            const prevButton = document.querySelector(
+                '.swiper-button-prev[data-swiper-id="1"]'
+            );
+            const nextButton = document.querySelector(
+                '.swiper-button-next[data-swiper-id="1"]'
+            );
 
             prevButton.disabled = swiper.isBeginning;
             nextButton.disabled = swiper.isEnd;
 
-            prevButton.classList.toggle('swiper-button-disabled', swiper.isBeginning);
+            prevButton.classList.toggle(
+                'swiper-button-disabled',
+                swiper.isBeginning
+            );
             nextButton.classList.toggle('swiper-button-disabled', swiper.isEnd);
         },
     },
