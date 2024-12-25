@@ -126,11 +126,12 @@ button.ac-trigger.about-accordion-toggle {
     background-color: transparent;
 }
 
-.about-icon {
+/* .about-icon {
     display: none;
-}
+} */
 
-.about-icon-up {
+.about-icon-up,
+.about-icon-down {
     display: block;
 }
 
@@ -165,13 +166,13 @@ button.ac-trigger.about-accordion-toggle {
     display: block;
 }
 
-div.ac-panel.accordion-content>.ac-text{
-    color: #FAFAFA;
+div.ac-panel.accordion-content > .ac-text {
+    color: #fafafa;
 }
 
 .accordion-content > .ac-text > .accordion-about-text {
     margin-top: 32px;
-    color: #FAFAFA;
+    color: #fafafa;
 }
 
 .ac-text.accordion-role-list {
@@ -181,7 +182,7 @@ div.ac-panel.accordion-content>.ac-text{
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
-    color: #FAFAFA;
+    color: #fafafa;
 }
 .ac .about-accordion-toggle.ac-trigger::after {
     content: none;
@@ -308,7 +309,7 @@ div.ac-panel.accordion-content>.ac-text{
         padding-bottom: 20px;
     }
 
-    .accordion-content>.ac-text>.accordion-about-text {
+    .accordion-content > .ac-text > .accordion-about-text {
         margin-top: 16px;
     }
 
@@ -342,7 +343,6 @@ div.ac-panel.accordion-content>.ac-text{
     .about-me-discr {
         flex-direction: row;
         gap: 16px;
-
     }
 
     .discr-card {
@@ -378,7 +378,7 @@ div.ac-panel.accordion-content>.ac-text{
         padding-bottom: 32px;
     }
 
-    .accordion-content>.ac-text>.accordion-about-text {
+    .accordion-content > .ac-text > .accordion-about-text {
         margin-top: 32px;
     }
 
