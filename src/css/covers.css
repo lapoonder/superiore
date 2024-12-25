@@ -16,7 +16,6 @@
 .projects-list {
     position: relative;
     top: calc(-162px);
-    /* left: calc(-282px * 2); */
     display: flex;
     gap: 23px;
     transform: rotate(16deg); 
