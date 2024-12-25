@@ -19,8 +19,8 @@
     /* left: calc(-282px * 2); */
     display: flex;
     gap: 23px;
-    /* transform: rotate(16deg); */
-    animation: moving-projects 10s linear infinite;
+    transform: rotate(16deg); 
+    animation: moving-projects 10s linear infinite; 
 }
 
 .projects-list:nth-child(2n) {
@@ -44,12 +44,12 @@
 
 @keyframes moving-projects {
     from {
-        transform: rotate(16deg) translateX(-30%);
+        transform: rotate(16deg) translateX(-35%);
     }
 
     to {
-        /*start position + (image width + gap)*5  */
-        transform: rotate(16deg) translateX(calc(-30% + (-282px + -23px) * 5));
+                                    /*start position + (image width + gap)*5  */
+        transform: rotate(16deg) translateX(calc(-35% + (-282px + -23px) * 5));
     }
 }
 
@@ -71,11 +71,10 @@
     }
     @keyframes moving-projects {
         from {
-            transform: rotate(16deg) translateX(-30%);
+            transform: rotate(16deg) translateX(-25%);
         }
         to {
-            transform: rotate(16deg)
-                translateX(calc(-30% + (-544px + -46px) * 5));
+            transform: rotate(16deg) translateX(calc(-25% + (-544px + -46px) * 5));
         }
     }
 }
