@@ -7,7 +7,9 @@ document.querySelectorAll('.accordion-container').forEach(container => {
   new Accordion(container, { showMultiple: true });
 });
 
+
 const arrows = document.querySelectorAll('.faq-ac-trigger');
+
 
 for (const arrow of arrows) {
     arrow.addEventListener('click', UpDown);

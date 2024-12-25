@@ -11,25 +11,38 @@ document.querySelectorAll('.accordion-list').forEach(container => {
 // Додавання слухачів подій для стрілок
 const arrows = document.querySelectorAll('.accordion-header');
 
+
 for (const arrow of arrows) {
-    arrow.addEventListener('click', UpDown);
+    arrow.addEventListener('click', UpDownAbout);
 }
 
 // Функція для зміни стану стрілки вгору/вниз
-function UpDown(event) {
+function UpDownAbout(event) {
     const header = event.currentTarget.closest('.accordion-header');
-    const button = header.querySelector('.accordion-toggle'); 
+    const button = header.querySelector('.accordion-toggle');
+
     const arrowUp = header.querySelector('.about-icon-up');
-    const arrowDown = header.querySelector('.about-icon-down'); 
+    const arrowDown = header.querySelector('.about-icon-down');
+    
+    const textAccordeonAbout = header.nextElementSibling;
 
     // Зміна атрибута aria-expanded і показ/сховання стрілок
     if (button.getAttribute('aria-expanded') === 'true') {
         button.setAttribute('aria-expanded', 'false');
-        arrowDown.style.display = 'block'; 
-        arrowUp.style.display = 'none';   
+        textAccordeonAbout.style.display = "block";
+
+        
+        arrowDown.style.display = 'block';
+        arrowUp.style.display = 'none';
     } else {
         button.setAttribute('aria-expanded', 'true');
-        arrowDown.style.display = 'none';   
-        arrowUp.style.display = 'block'; 
+        textAccordeonAbout.style.display = "none";
+
+        arrowDown.style.display = 'none';
+        arrowUp.style.display = 'block';
     }
+
+
+    
 }
+
