@@ -56,6 +56,7 @@
     transition: border-bottom 250ms linear;
     outline: none;
     background-color: #1c1d20;
+    text-overflow: ellipsis;
 }
 
 .form-input::placeholder {
@@ -112,6 +113,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 4px;
 }
 
@@ -128,6 +130,80 @@
 .footer-contacts a:hover,
 .footer-contacts a:active {
     border: 1px solid #fafafa;
+}
+
+.pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.pop-up.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.pop-up-content {
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    border-radius: 20px;
+    padding: 64px 32px;
+    width: 343px;
+    height: 276px;
+    background: #1c1d20;
+    position: relative;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.pop-up-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.pop-up-close-icon {
+    width: 11px;
+    height: 11px;
+    fill: #fafafa;
+}
+
+.pop-up-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fafafa;
+    margin-bottom: 16px;
+}
+
+.pop-up-text {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(250, 250, 250, 0.6);
 }
 
 @media (min-width: 768px) {
@@ -178,6 +254,22 @@
     .footer-contacts a {
         padding: 18px 32px;
         font-size: 16px;
+    }
+
+    .pop-up-content {
+        padding: 64px;
+        width: 492px;
+        height: 246px;
+    }
+
+    .pop-up-close-btn {
+        width: 24px;
+        height: 24px;
+    }
+
+    .pop-up-close-icon {
+        width: 12px;
+        height: 12px;
     }
 }
 

@@ -241,7 +241,7 @@
         padding-left: 64px;
         padding-top: 0;
         padding-bottom: 64px;
-        padding-right: auto;
+        /* padding-right: auto; */
         height: auto;
     }
 

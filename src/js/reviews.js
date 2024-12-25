@@ -34,8 +34,8 @@ const swiperRev = new Swiper('.reviews .swiper', {
     loop: false,
     grabCursor: true,
     navigation: {
-        nextEl: '.arrows .swiper-button-next',
-        prevEl: '.arrows .swiper-button-prev',
+        nextEl: '.swiper-button-next[data-swiper-id="2"]',
+        prevEl: '.swiper-button-prev[data-swiper-id="2"]',
     },
     keyboard: {
         enabled: true,
@@ -45,8 +45,12 @@ const swiperRev = new Swiper('.reviews .swiper', {
 
     on: {
         slideChange: function () {
-            const prev = document.querySelector('.swiper-button-prev');
-            const next = document.querySelector('.swiper-button-next');
+            const prev = document.querySelector(
+                '.swiper-button-prev[data-swiper-id="2"]'
+            );
+            const next = document.querySelector(
+                '.swiper-button-next[data-swiper-id="2"]'
+            );
 
             prev.disabled = swiperRev.isBeginning;
             next.disabled = swiperRev.isEnd;
