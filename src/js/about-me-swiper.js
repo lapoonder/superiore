@@ -1,37 +1,46 @@
-   
 'use strict';
 import 'swiper/css';
 
 import Swiper from 'swiper';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
-const swiper = new Swiper('.custom-swiper', {
-  modules: [Navigation, Keyboard, Mousewheel],
-  slidesPerView: 1,
-  spaceBetween: 0,
-  loop: false,
+const swiper2 = new Swiper('.skills-swiper-about-me', {
+    wrapperClass: 'skills-list',
+    slideClass: 'skills-list-items',
+    slideActiveClass: 'chosen',
+    modules: [Navigation, Keyboard, Mousewheel],
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+        },
 
-  navigation: {
-    nextEl: '.skills-swiper-btn-next',
-  },
+        768: {
+            slidesPerView: 3,
+        },
 
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
-
-  mousewheel: true,
-
-  on: {
-    slideChange: function () {
-      const nextButton = document.querySelector('.skills-swiper-btn-next');
-      
-      const items = document.querySelectorAll('.swiper-skills-list-items');
-      items.forEach(item => item.classList.remove('chosen'));
-      const activeIndex = swiper.realIndex; 
-      items[activeIndex].classList.add('chosen');
+        1440: {
+            slidesPerView: 6,
+        },
     },
-  },
+
+    navigation: {
+        nextEl: 'skills-btm',
+    },
+
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+    },
+
+    mousewheel: {
+        enabled: true,
+    },
 });
 
-    
+document.querySelector('.skills-btm').addEventListener('click', e => {
+    swiper2.slideNext();
+});
