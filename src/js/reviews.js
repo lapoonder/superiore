@@ -9,6 +9,8 @@ const cards = document.querySelector('.cards');
 const reviewsSection = document.querySelector('.reviews');
 let isReviewsLoaded = false;
 
+loadReviews();
+
 window.addEventListener('scroll', () => {
     if (!isReviewsLoaded && isElementInViewport(reviewsSection)) {
         loadReviews();
@@ -79,10 +81,12 @@ async function loadReviews() {
         const result = await getReviews();
         cards.insertAdjacentHTML('beforeend', createMarkup(result));
     } catch (error) {
-        iziToast.error({
-            message: `Error: ${error.message}`,
-            position: 'bottomRight',
-        });
+        if (isElementInViewport(reviewsSection)) {
+            iziToast.error({
+                message: `Error: ${error.message}`,
+                position: 'bottomRight',
+            });
+        }
         cards.innerHTML = '<h2>Not found</h2>';
     }
 }
