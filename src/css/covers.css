@@ -19,7 +19,10 @@
     display: flex;
     gap: 23px;
     transform: rotate(16deg); 
-    animation: moving-projects 10s linear infinite; 
+}
+
+.active-list-animation{
+    animation: moving-projects 10s linear infinite;
 }
 
 .projects-list:nth-child(2n) {
