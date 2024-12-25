@@ -22,7 +22,6 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 12px;
 }
 
 .discr-card {
@@ -76,7 +75,7 @@ ul.accordion-container.accordion-list {
 }
 
 li.ac.accordion-item {
-margin-top: 0px;
+    margin-top: 0px;
     border: none;
     background-color: transparent;
     border-bottom: 1px solid rgba(250, 250, 250, 0.4);
@@ -88,7 +87,6 @@ div.ac-header.accordion-header {
     align-items: center;
     font-size: 16px;
     padding-top: 20px;
-    padding-bottom: 12px;
 }
 
 .accordion-title {
@@ -152,7 +150,7 @@ button.ac-trigger.about-accordion-toggle {
     display: block;
 }
 
-.ac-panel.accordion-content {
+#about-me > .ac-panel.accordion-content {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.02em;
@@ -160,6 +158,7 @@ button.ac-trigger.about-accordion-toggle {
     display: none;
     padding-top: 12px;
     padding-bottom: 20px;
+    transition-duration: 300ms;
 }
 
 .accordion-item.open .accordion-content {
@@ -202,7 +201,7 @@ div.ac-panel.accordion-content>.ac-text{
     flex-wrap: nowrap;
     align-items: center;
     margin: 0;
-    margin-top: 64px;
+    margin-top: 32px;
 }
 
 .skills-swiper-about-me {
@@ -272,14 +271,9 @@ div.ac-panel.accordion-content>.ac-text{
         padding: 0 32px;
     }
 
-    .about-me-discr {
-        margin-bottom: 12px;
-    }
-
     .discr-card {
         width: 704px;
         height: 700px;
-        min-width: none;
         max-width: none;
         max-height: none;
     }
@@ -307,7 +301,6 @@ div.ac-panel.accordion-content>.ac-text{
 
     div.ac-header.accordion-header {
         padding-top: 20px;
-        padding-bottom: 12px;
     }
 
     .ac-panel.accordion-content {
@@ -319,8 +312,13 @@ div.ac-panel.accordion-content>.ac-text{
         margin-top: 16px;
     }
 
+    .swiper-container-aboutme {
+        margin-top: 0px;
+    }
+
     .skills-swiper-about-me {
         width: 600px;
+        margin-top: 64px;
     }
 
     .swiper-name-list-aboutme {
@@ -344,7 +342,7 @@ div.ac-panel.accordion-content>.ac-text{
     .about-me-discr {
         flex-direction: row;
         gap: 16px;
-        margin-bottom: 96px;
+
     }
 
     .discr-card {
@@ -366,7 +364,6 @@ div.ac-panel.accordion-content>.ac-text{
 
     div.ac-header.accordion-header {
         padding-top: 32px;
-        padding-bottom: 32px;
     }
 
     .about-svg-icon {
