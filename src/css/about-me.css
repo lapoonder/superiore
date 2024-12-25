@@ -65,7 +65,9 @@
     border-radius: 24px;
 }
 
-.accordion {
+/* accordion */
+
+.accordion-list {
     margin-top: 12px;
     max-width: 343px;
     height: auto;
@@ -174,32 +176,37 @@
     margin-bottom: 20px;
 }
 
-.skills{
-        background: none;
-            border: none;
-            padding: 0;
-            font: inherit;
-            color: inherit;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
+/* Swiper */
+
+.swiper-skills{
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 343px;
+    height: 130px;
+    margin-top: 32px;
+    /*overflow: hidden;
+    position: relative;*/
 }
 
-.skills-list {
-    font-size: 16px;
+.swiper-wrapper-skills-list {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-flex-direction: row;
-
+    flex-direction: row;
     gap: 0px;
-    margin-top: 32px;
-    margin-bottom: 20px;
+    width: 343px;
+    height: 130px;
+    /* overflow: hidden; */
 }
 
-.skills-list-items {
+.swiper-skills-list-items {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,13 +216,14 @@ flex-direction: row;
     height: 130px;
     background-color: transparent;
     transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.skills-list-items.chosen {
+.swiper-skills-list-items.chosen {
     background-color: #ed3b44;
 }
 
-.skills-btn{
+.skills-swiper-btn-next{
         background: none;
             border: none;
             padding: 0;
@@ -283,7 +291,7 @@ flex-direction: row;
         width: 704px;
     }
 
-    .accordion {
+    .accordion-list {
         margin-top: 12px;
         width: 704px;
         max-width: none;
@@ -303,7 +311,17 @@ flex-direction: row;
         margin-top: 16px;
     }
 
-    .skills-list-items {
+    .swiper-skills{
+        max-width: 704px;
+        height: 200px;
+    }
+
+    .swiper-wrapper-skills-list {
+    width: 704px;
+    height: 200px;
+}
+
+    .swiper-skills-list-items {
         font-size: 20px;
         width: 200px;
         height: 200px;
@@ -340,7 +358,7 @@ flex-direction: row;
         max-width: 680px;
     }
 
-    .accordion {
+    .accordion-list {
         max-width: 1376px;
         width: 100%;
     }
@@ -366,16 +384,18 @@ flex-direction: row;
         margin-top: 32px;
     }
 
-    .skills {
+    .swiper-skills {
+        max-width: 1312px;
         margin-top: 96px;
         margin-left: 32px;
         margin-right: 32px;
     }
 
-    .skills-list {
+    .swiper-wrapper-skills-list {
         flex-direction: row;
         margin-top: 0px;
         margin-bottom: 0px;
+        width: 1312px;
     }
 
     .about-svg-side-icon {
