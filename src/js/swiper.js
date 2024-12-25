@@ -6,7 +6,7 @@ import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
 const swiper = new Swiper('.swiper-container', {
     modules: [Navigation, Keyboard, Mousewheel],
-    speed: 400,
+    speed: 200,
     slidesPerView: 1,
     spaceBetween: 0,
     loop: false,
