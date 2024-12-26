@@ -71,7 +71,7 @@ ul.accordion-container.accordion-list {
     height: auto;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-bottom: 32px;
 }
 
 li.ac.accordion-item {
@@ -88,6 +88,7 @@ h2.ac-header.accordion-header {
     font-size: 16px;
     padding-top: 20px;
     padding-right: 8px;
+    padding-bottom: 0;
 }
 
 .accordion-title {
@@ -174,11 +175,14 @@ button.ac-trigger.about-accordion-toggle {
 div.ac-panel.accordion-content > .ac-text {
     color: #fafafa;
     padding-top: 28px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .accordion-content > .ac-text > .accordion-about-text {
     margin-top: 32px;
-    color: #fafafa;
+    /* color: #fafafa; */
 }
 
 .ac-text.accordion-role-list {
@@ -188,7 +192,7 @@ div.ac-panel.accordion-content > .ac-text {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
-    color: #fafafa;
+    /* color: #fafafa; */
 }
 .ac .ac-trigger::after {
     content: none !important;
@@ -207,7 +211,7 @@ div.ac-panel.accordion-content > .ac-text {
     flex-wrap: nowrap;
     align-items: center;
     margin: 0;
-    margin-top: 32px;
+    /* margin-top: 32px; */
 }
 
 .skills-swiper-about-me {
@@ -303,10 +307,12 @@ div.ac-panel.accordion-content > .ac-text {
         margin-top: 12px;
         width: 704px;
         max-width: none;
+        margin-bottom: 64px;
     }
 
     h2.ac-header.accordion-header {
         padding-top: 20px;
+        padding-bottom: 0;
     }
 
     .ac-panel.accordion-content {
@@ -324,7 +330,7 @@ div.ac-panel.accordion-content > .ac-text {
 
     .skills-swiper-about-me {
         width: 600px;
-        margin-top: 64px;
+        margin-top: 0;
     }
 
     .swiper-name-list-aboutme {
@@ -359,10 +365,12 @@ div.ac-panel.accordion-content > .ac-text {
     ul.accordion-container.accordion-list {
         max-width: 1376px;
         width: 100%;
+        margin-bottom: 96px;
     }
 
     h2.ac-header.accordion-header {
         padding-top: 32px;
+        padding-bottom: 0;
     }
 
     .about-svg-icon {
@@ -382,7 +390,7 @@ div.ac-panel.accordion-content > .ac-text {
     }
 
     .swiper-container-aboutme {
-        margin: 96px 32px 0 32px;
+        margin: 0 32px 0 32px;
     }
 
     .skills-swiper-about-me {

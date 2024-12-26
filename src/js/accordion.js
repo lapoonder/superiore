@@ -4,7 +4,7 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 new Accordion('.accordion-list', {
-    duration: 400,
+    duration: 600,
     showMultiple: true,
     openOnInit: [0],
 });
