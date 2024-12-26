@@ -46,12 +46,12 @@
 
 @keyframes moving-projects {
     from {
-        transform: rotate(16deg) translateX(-35%);
+        transform: rotate(16deg) translateX(-40%);
     }
 
     to {
                                     /*start position + (image width + gap)*5  */
-        transform: rotate(16deg) translateX(calc(-35% + (-282px + -23px) * 5));
+        transform: rotate(16deg) translateX(calc(-40% + (-282px + -23px) * 5));
     }
 }
 
