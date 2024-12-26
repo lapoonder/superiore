@@ -1,5 +1,15 @@
 'use strict';
 
+import "./js/reviews.js";
+import "./js/header.js";
+import "./js/swiper.js";
+import "./js/faq.js";
+import "./js/covers.js";
+import "./js/goit-requestsAPI.js";
+import "./js/about-me-swiper.js";
+import "./js/about-me-ac.js";
+
+
 import { message, messageInfo } from './js/iziToast.js';
 
 const btnUp = {
