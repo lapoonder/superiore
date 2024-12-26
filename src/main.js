@@ -1,7 +1,14 @@
 'use strict';
 
-import { message, messageInfo } from './js/iziToast.js';
+import './js/reviews.js';
+import './js/header.js';
+import './js/swiper.js';
+import './js/covers.js';
+import './js/goit-requestsAPI.js';
+import './js/about-me-swiper.js';
+import './js/accordion.js';
 
+// Button from scroll to up page
 const btnUp = {
     el: document.querySelector('.btn-up'),
     show() {
