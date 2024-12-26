@@ -38,6 +38,7 @@ const swiper2 = new Swiper('.skills-swiper-about-me', {
 
     mousewheel: {
         enabled: true,
+        invert: true,
     },
 });
 
