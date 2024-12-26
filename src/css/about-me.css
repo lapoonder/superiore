@@ -165,20 +165,29 @@ button.ac-trigger.about-accordion-toggle {
     padding-top: 12px;
     padding-bottom: 20px;
     transition-duration: 300ms;
+    /* opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, height 0.4s ease; */
 }
 
 .accordion-item.open .accordion-content {
     display: block;
+    /* opacity: 1;
+    height: auto; */
 }
 
 div.ac-panel.accordion-content > .ac-text {
     color: #fafafa;
     padding-top: 28px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .accordion-content > .ac-text > .accordion-about-text {
     margin-top: 32px;
-    color: #fafafa;
+    /* color: #fafafa; */
 }
 
 .ac-text.accordion-role-list {
@@ -188,7 +197,7 @@ div.ac-panel.accordion-content > .ac-text {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
-    color: #fafafa;
+    /* color: #fafafa; */
 }
 .ac .ac-trigger::after {
     content: none !important;
@@ -307,6 +316,7 @@ div.ac-panel.accordion-content > .ac-text {
 
     h2.ac-header.accordion-header {
         padding-top: 20px;
+        padding-bottom: 0;
     }
 
     .ac-panel.accordion-content {
@@ -363,6 +373,7 @@ div.ac-panel.accordion-content > .ac-text {
 
     h2.ac-header.accordion-header {
         padding-top: 32px;
+        padding-bottom: 0;
     }
 
     .about-svg-icon {
