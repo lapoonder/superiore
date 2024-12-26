@@ -81,7 +81,7 @@ li.ac.accordion-item {
     border-bottom: 1px solid rgba(250, 250, 250, 0.4);
 }
 
-div.ac-header.accordion-header {
+h2.ac-header.accordion-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -168,6 +168,7 @@ button.ac-trigger.about-accordion-toggle {
 
 div.ac-panel.accordion-content > .ac-text {
     color: #fafafa;
+    padding-top: 28px;
 }
 
 .accordion-content > .ac-text > .accordion-about-text {
@@ -300,7 +301,7 @@ div.ac-panel.accordion-content > .ac-text {
         max-width: none;
     }
 
-    div.ac-header.accordion-header {
+    h2.ac-header.accordion-header {
         padding-top: 20px;
     }
 
@@ -362,7 +363,7 @@ div.ac-panel.accordion-content > .ac-text {
         width: 100%;
     }
 
-    div.ac-header.accordion-header {
+    h2.ac-header.accordion-header {
         padding-top: 32px;
     }
 
