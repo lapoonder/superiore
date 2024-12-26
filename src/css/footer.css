@@ -182,10 +182,15 @@
     padding: 0;
 }
 
+.pop-up-close-btn:hover .pop-up-close-icon {
+    fill: grey;
+}
+
 .pop-up-close-icon {
     width: 11px;
     height: 11px;
     fill: #fafafa;
+    transition: fill 250ms ease-out;
 }
 
 .pop-up-title {

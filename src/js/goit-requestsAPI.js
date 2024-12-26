@@ -5,8 +5,9 @@ const commentInput = document.querySelector('#comment');
 const emailInput = document.querySelector('#email');
 const popup = document.querySelector('.pop-up');
 const popupCloseButton = document.querySelector('.pop-up-close-btn');
+const popupCloseButtonIcon = document.querySelector('.pop-up-close-icon');
 
-const apiURL = 'https://portfolio-js.b.goit.study/api';
+const apiURL = 'https://portfolio-js.b.goit.study/api/requests';
 
 form.addEventListener('submit', async event => {
     event.preventDefault();
@@ -41,6 +42,16 @@ form.addEventListener('submit', async event => {
     }
 });
 
-popupCloseButton.addEventListener('click', () => {
-    popup.classList.remove('is-open');
+document.addEventListener('click', event => {
+    if (event.target == popup) {
+        popup.classList.remove('is-open');
+    } else if (event.target == (popupCloseButton && popupCloseButtonIcon)) {
+        popup.classList.remove('is-open');
+    }
+});
+
+document.addEventListener('keydown', event => {
+    if (event.code == 'Escape') {
+        popup.classList.remove('is-open');
+    }
 });
