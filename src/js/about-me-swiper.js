@@ -28,7 +28,7 @@ const swiper2 = new Swiper('.skills-swiper-about-me', {
     },
 
     navigation: {
-        nextEl: 'skills-btm',
+        nextEl: '.skills-btm',
     },
 
     keyboard: {
