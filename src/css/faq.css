@@ -86,6 +86,8 @@ li.ac .ac-panel .faq-ac-text {
 
     .faq-btn {
         top: 0;
+        width: 40px;
+        height: 40px;
     }
 
     li.faq-ac-item {
