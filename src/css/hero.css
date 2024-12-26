@@ -6,6 +6,8 @@
     background-size: contain;
     background-repeat: repeat;
     background-position: center;
+    padding-top: 281px;
+    padding-bottom: 32px;
 }
 @media screen and (min-resolution: 192dpi) {
     .hero-img {
@@ -19,7 +21,6 @@
 }
 
 .hero-title {
-    padding-top: 281px;
     padding-bottom: 212px;
     font-weight: 500;
     font-size: 50px;
@@ -33,8 +34,7 @@
     max-width: 100%;
     display: flex;
     gap: 4px;
-    justify-content: flex-start;
-    padding-bottom: 32px;
+    justify-content: flex-end;
 }
 
 .hero-list-link {
@@ -42,8 +42,6 @@
     font-size: 14px;
     letter-spacing: -0.02em;
     color: #fafafa;
-    
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,14 +52,19 @@
     transition: border 250ms linear;
 }
 
-.hero-list-item:nth-child(-n+4) .hero-list-link {
-    width: 37px;
+.hero-list-item {
+    max-width: 37px;
 }
 
-.hero-list-item:last-child .hero-list-link {
-    width: 178px;
+.hero-list-item:last-child {
+    max-width: 178px;
 }
 
+@media screen and (max-width: 374px) {
+    .hero-list-item:last-child {
+        max-width: calc((100vw / 2) - 35px);
+    }
+}
 
 .hero-list-link:hover,
 .hero-list-link:focus {
@@ -69,6 +72,8 @@
 }
 
 .link-email {
+    display: block;
+    white-space: nowrap; /* Запрещаем перенос строк */
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -77,6 +82,7 @@
 @media screen and (min-width: 768px) {
     .hero-img {
         background-image: url(../img/webp/hero-tab1x.webp);
+        padding-top: 300px;
     }
     @media screen and (min-resolution: 192dpi) {
         .hero-img {
@@ -86,7 +92,8 @@
 
     .hero-title {
         font-size: 90px;
-        padding: 300px 72px 187px 0;
+        padding-bottom: 187px;
+        padding-right: 104px;
     }
 
     .hero-list {
@@ -99,11 +106,13 @@
         height: 55px;
         font-size: 16px;
     }
-    .hero-list-item:nth-child(-n+4) .hero-list-link{
-        width: 55px;
+
+    .hero-list-item {
+        max-width: 55px;
     }
-    .hero-list-item:last-child .hero-list-link {
-        width: 223px;
+
+    .hero-list-item:last-child {
+        max-width: 223px;
     }
 }
 
@@ -121,6 +130,9 @@
 
     .hero-title {
         font-size: 90px;
-        padding: 300px 146px 243px;
+        width: 1084px;
+        margin: auto;
+        padding-right: 0;
+        padding-bottom: 243px;
     }
 }
