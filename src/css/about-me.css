@@ -189,7 +189,7 @@ div.ac-panel.accordion-content > .ac-text {
     margin-bottom: 20px;
     color: #fafafa;
 }
-.ac .about-accordion-toggle.ac-trigger::after {
+.ac .ac-trigger::after {
     content: none;
     color: transparent;
 }
