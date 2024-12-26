@@ -17,7 +17,6 @@ const animation = {
         })
       } else {
         animation.imagesLists.forEach(list => {
-          console.log(list);
           list.classList.remove('active-list-animation');
         }) 
       }
