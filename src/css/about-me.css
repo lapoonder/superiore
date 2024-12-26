@@ -124,11 +124,15 @@ button.ac-trigger.about-accordion-toggle {
     stroke: #fafafa;
     margin-left: 23px;
     background-color: transparent;
+    transform: scale(1);
+    transition: transform 250ms linear;
 }
 
-/* .about-icon {
-    display: none;
-} */
+.about-svg-icon:hover {
+    border: 1px solid #fafafa;
+    transform: scale(1.1);
+    transition: transform 250ms linear;
+}
 
 .about-icon-up,
 .about-icon-down {

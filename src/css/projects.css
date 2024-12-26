@@ -107,6 +107,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: scale(1);
+    transition: transform 250ms linear;
 }
 
 .swiper-button-next {
@@ -119,6 +121,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: scale(1);
+    transition: transform 250ms linear;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    border: 1px solid #fafafa;
+    transform: scale(1.04);
 }
 
 .svg-one {

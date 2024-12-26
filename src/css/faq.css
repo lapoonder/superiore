@@ -1,4 +1,4 @@
-li.faq-ac-item  {
+li.faq-ac-item {
     background-color: #1c1d20;
     color: #fafafa;
     padding: 20px 0;
@@ -63,6 +63,13 @@ li.ac .ac-panel .faq-ac-text {
     background-color: #1c1d20;
     fill: transparent;
     stroke: white;
+    transform: scale(1);
+    transition: transform 250ms linear;
+}
+
+.faq-btn:hover {
+    border: 1px solid #fafafa;
+    transform: scale(1.1);
 }
 
 #faq p.faq-ac-text {
@@ -115,12 +122,10 @@ li.ac .ac-panel .faq-ac-text {
 
     .faq-ac-item:nth-child(1) {
         order: 1;
-        
     }
 
     .faq-ac-item:nth-child(2) {
         order: 3;
-        
     }
 
     .faq-ac-item:nth-child(3) {

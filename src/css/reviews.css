@@ -19,6 +19,14 @@
     width: 52px;
     height: 52px;
     background-color: transparent;
+    transform: scale(1);
+    transition: transform 250ms linear;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    border: 1px solid #fafafa;
+    transform: scale(1.04);
 }
 
 .swiper-button-disabled {
