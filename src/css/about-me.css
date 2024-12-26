@@ -87,6 +87,7 @@ h2.ac-header.accordion-header {
     align-items: center;
     font-size: 16px;
     padding-top: 20px;
+    padding-right: 8px;
 }
 
 .accordion-title {
@@ -190,8 +191,7 @@ div.ac-panel.accordion-content > .ac-text {
     color: #fafafa;
 }
 .ac .ac-trigger::after {
-    content: none;
-    color: transparent;
+    content: none !important;
 }
 .ac .about-accordion-toggle.ac-trigger {
     content: none;
