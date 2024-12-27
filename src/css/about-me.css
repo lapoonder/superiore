@@ -31,6 +31,7 @@
     width: 100%;
     height: calc((100vw * 1.418) - 32px);
     background: #242527;
+    padding: 32px;
 }
 
 .discr-text {
@@ -41,9 +42,9 @@
     color: #fafafa;
     max-width: 279px;
     height: auto;
-    margin-top: 32px;
+    /* margin-top: 32px;
     margin-left: 32px;
-    margin-right: 32px;
+    margin-right: 32px; */
 }
 
 .discr-text > .accent-first {
@@ -69,8 +70,9 @@ ul.accordion-container.accordion-list {
     height: auto;
     list-style: none;
     padding: 0;
-    padding-top: 12px;
-    padding-bottom: 32px;
+    /* padding-top: 12px;
+    padding-bottom: 32px; */
+    margin-top: 32px;
 }
 
 li.ac.accordion-item {
@@ -220,7 +222,7 @@ div.ac-panel.accordion-content > .ac-text {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    margin: 0;
+    margin-top: 32px;
 }
 
 .skills-swiper-about-me {
@@ -291,6 +293,7 @@ div.ac-panel.accordion-content > .ac-text {
         height: 700px;
         max-width: none;
         max-height: none;
+        padding: 64px;
     }
 
     .discr-text {
@@ -298,9 +301,9 @@ div.ac-panel.accordion-content > .ac-text {
         line-height: 105%;
         width: 576px;
         max-width: none;
-        margin-top: 64px;
+        /* margin-top: 64px;
         margin-left: 64px;
-        margin-right: 64px;
+        margin-right: 64px; */
     }
 
     .discr-img {
@@ -311,8 +314,9 @@ div.ac-panel.accordion-content > .ac-text {
     ul.accordion-container.accordion-list {
         width: 704px;
         max-width: none;
-        padding-top: 44px;
-        padding-bottom: 64px;
+        /* padding-top: 44px;
+        padding-bottom: 64px; */
+        margin-top: 64px;
     }
 
     .accordion-content > .ac-text > .accordion-about-text {
@@ -320,7 +324,7 @@ div.ac-panel.accordion-content > .ac-text {
     }
 
     .swiper-container-aboutme {
-        margin-top: 0px;
+        margin-top: 64px;
     }
 
     .skills-swiper-about-me {
@@ -360,8 +364,9 @@ div.ac-panel.accordion-content > .ac-text {
     ul.accordion-container.accordion-list {
         max-width: 1376px;
         width: 100%;
-        padding-top: 64px;
-        padding-bottom: 96px;
+        /* padding-top: 64px;
+        padding-bottom: 96px; */
+        margin-top: 96px;
     }
 
     li.ac.accordion-item {
@@ -386,7 +391,7 @@ div.ac-panel.accordion-content > .ac-text {
     }
 
     .swiper-container-aboutme {
-        margin: 0 32px 0 32px;
+        margin: 96px 32px 0 32px;
     }
 
     .skills-swiper-about-me {
