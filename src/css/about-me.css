@@ -33,7 +33,15 @@
     background: #242527;
     padding: 32px;
 }
-
+.discr-card-img {
+    border-radius: 24px;
+    min-width: 288px;
+    max-width: 343px;
+    max-height: 500px;
+    width: 100%;
+    height: calc((100vw * 1.418) - 32px);
+    background: #242527;
+}
 .discr-text {
     font-size: 24px;
     line-height: 117%;
@@ -295,7 +303,12 @@ div.ac-panel.accordion-content > .ac-text {
         max-height: none;
         padding: 64px;
     }
-
+    .discr-card-img {
+        width: 704px;
+        height: 700px;
+        max-width: none;
+        max-height: none;
+    }
     .discr-text {
         font-size: 38px;
         line-height: 105%;
@@ -352,7 +365,9 @@ div.ac-panel.accordion-content > .ac-text {
     .discr-card {
         max-width: 680px;
     }
-
+    .discr-card-img {
+        max-width: 680px;
+    }
     .discr-text {
         max-width: 552px;
     }
