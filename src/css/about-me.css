@@ -69,8 +69,8 @@ ul.accordion-container.accordion-list {
     height: auto;
     list-style: none;
     padding: 0;
-    margin-top: 12px;
-    margin-bottom: 32px;
+    padding-top: 12px;
+    padding-bottom: 32px;
 }
 
 li.ac.accordion-item {
@@ -317,8 +317,8 @@ div.ac-panel.accordion-content > .ac-text {
     ul.accordion-container.accordion-list {
         width: 704px;
         max-width: none;
-        margin-top: 44px;
-        margin-bottom: 64px;
+        padding-top: 44px;
+        padding-bottom: 64px;
     }
 
     .accordion-content > .ac-text > .accordion-about-text {
@@ -366,8 +366,8 @@ div.ac-panel.accordion-content > .ac-text {
     ul.accordion-container.accordion-list {
         max-width: 1376px;
         width: 100%;
-        margin-top: 64px;
-        margin-bottom: 96px;
+        padding-top: 64px;
+        padding-bottom: 96px;
     }
 
     li.ac.accordion-item {
