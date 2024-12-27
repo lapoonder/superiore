@@ -1,19 +1,27 @@
 
+
+// body-scroll-lock import
+import {disableBodyScroll, enableBodyScroll} from 'body-scroll-lock';
+
 /*Відкриття закриття модального вікна на мобпристроях*/
 const modalWindow = document.querySelector(".modal-overlay-menu");
 const openMobMenu = document.querySelector(".btn-mob-menu");
 const btnClose = document.querySelector(".mobmenu-btn-close");
+
+
 
 openMobMenu.addEventListener("click", mobileMenuOpen);
 btnClose.addEventListener("click", mobileMenuClose);
 
 function mobileMenuOpen() {
     modalWindow.classList.add("is-open");
+    disableBodyScroll(modalWindow);
     btnOrderProject.removeAttribute("disabled");
 }
 
 function mobileMenuClose() {
     modalWindow.classList.remove("is-open");
+    enableBodyScroll(modalWindow);
 }
 
 /*Навігація по мобільному меню*/
