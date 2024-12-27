@@ -53,14 +53,22 @@
 }
 
 .hero-list-item {
-    max-width: 37px;
+    width: 37px;
 }
 
 .hero-list-item:last-child {
-    max-width: 178px;
+    width: 178px;
 }
 
 @media screen and (max-width: 374px) {
+    .hero-list-item:last-child a {
+        display: block;
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 7px 10px;
+    }
+
     .hero-list-item:last-child {
         max-width: calc((100vw / 2) - 35px);
     }
@@ -69,13 +77,6 @@
 .hero-list-link:hover,
 .hero-list-link:focus {
     border: 1px solid #fafafa;
-}
-
-.link-email {
-    display: block;
-    white-space: nowrap; /* Запрещаем перенос строк */
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 /*Планшетна версія*/
@@ -108,11 +109,11 @@
     }
 
     .hero-list-item {
-        max-width: 55px;
+        min-width: 55px;
     }
 
     .hero-list-item:last-child {
-        max-width: 223px;
+        min-width: 223px;
     }
 }
 
