@@ -82,9 +82,6 @@ li.ac.accordion-item {
     padding-bottom: 0;
 }
 
-li.ac.accordion-item: {
-}
-
 h2.ac-header.accordion-header {
     font-family: 'Inter Tight', sans-serif;
     font-weight: 600;
@@ -190,7 +187,6 @@ div.ac-panel.accordion-content > .ac-text {
 
 .accordion-content > .ac-text > .accordion-about-text {
     margin-top: 32px;
-    /* color: #fafafa; */
 }
 
 .ac-text.accordion-role-list {
@@ -200,7 +196,6 @@ div.ac-panel.accordion-content > .ac-text {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
-    /* color: #fafafa; */
 }
 
 .ac .ac-trigger::after {
@@ -226,7 +221,6 @@ div.ac-panel.accordion-content > .ac-text {
     flex-wrap: nowrap;
     align-items: center;
     margin: 0;
-    /* margin-top: 32px; */
 }
 
 .skills-swiper-about-me {
