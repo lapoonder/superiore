@@ -1,5 +1,3 @@
-
-
 .hidden {
     position: absolute;
     width: 1px;
@@ -11,6 +9,10 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.about-me {
+    padding-top: 64px;
 }
 
 .about-me-discr {
@@ -63,11 +65,11 @@
 /* accordion */
 
 ul.accordion-container.accordion-list {
-    margin-top: 12px;
     max-width: 343px;
     height: auto;
     list-style: none;
     padding: 0;
+    margin-top: 12px;
     margin-bottom: 32px;
 }
 
@@ -76,16 +78,25 @@ li.ac.accordion-item {
     border: none;
     background-color: transparent;
     border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+li.ac.accordion-item: {
 }
 
 h2.ac-header.accordion-header {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: self-start;
     font-size: 16px;
-    padding-top: 20px;
-    padding-right: 8px;
-    padding-bottom: 0;
+    padding: 0;
 }
 
 .accordion-title {
@@ -191,9 +202,16 @@ div.ac-panel.accordion-content > .ac-text {
     margin-bottom: 20px;
     /* color: #fafafa; */
 }
+
 .ac .ac-trigger::after {
     content: none !important;
 }
+
+.ac-panel.accordion-content {
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
 .ac .about-accordion-toggle.ac-trigger {
     content: none;
     color: transparent;
@@ -270,8 +288,6 @@ div.ac-panel.accordion-content > .ac-text {
 }
 
 @media screen and (min-width: 768px) {
-
-
     .about-me > .container {
         padding: 0 32px;
     }
@@ -299,20 +315,10 @@ div.ac-panel.accordion-content > .ac-text {
     }
 
     ul.accordion-container.accordion-list {
-        margin-top: 12px;
         width: 704px;
         max-width: none;
+        margin-top: 44px;
         margin-bottom: 64px;
-    }
-
-    h2.ac-header.accordion-header {
-        padding-top: 20px;
-        padding-bottom: 0;
-    }
-
-    .ac-panel.accordion-content {
-        padding-top: 12px;
-        padding-bottom: 20px;
     }
 
     .accordion-content > .ac-text > .accordion-about-text {
@@ -336,6 +342,9 @@ div.ac-panel.accordion-content > .ac-text {
 }
 
 @media screen and (min-width: 1440px) {
+    .about-me {
+        padding-top: 96px;
+    }
 
     .about-me-discr {
         flex-direction: row;
@@ -357,10 +366,11 @@ div.ac-panel.accordion-content > .ac-text {
     ul.accordion-container.accordion-list {
         max-width: 1376px;
         width: 100%;
+        margin-top: 64px;
         margin-bottom: 96px;
     }
 
-    h2.ac-header.accordion-header {
+    li.ac.accordion-item {
         padding-top: 32px;
         padding-bottom: 0;
     }
