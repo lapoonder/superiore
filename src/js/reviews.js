@@ -95,7 +95,7 @@ function createMarkup(arr) {
     return arr
         .map(
             ({ author, avatar_url, review }) =>
-                `<li class="swiper-slide review-card"><img  loading="lazy" src="${avatar_url}" class="review-card-img"><h3 class="card-title">${author}</h3><p class="card-paragraph">${review}</p></li>`
+                `<li class="swiper-slide review-card"><img loading="lazy" src="${avatar_url}" alt="${author}" class="review-card-img"><h3 class="card-title">${author}</h3><p class="card-paragraph">${review}</p></li>`
         )
         .join('');
 }
